@@ -1,41 +1,15 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+// import BaseHead from '../components/BaseHead.astro';
+// import Header from '../components/Header.astro';
+// import Footer from '../components/Footer.astro';
 import PlanCard from '../components/PlanCard.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+// import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { getCollection } from 'astro:content';
-import type { Plan } from '../types';
+// import type { Plan } from '../types';
 
-// getCollection('blog').then((posts) => {
-//     console.log(posts);
-// });
 const plans = (await getCollection('blog')).sort(
 	(a, b) => a.data.date.valueOf() - b.data.date.valueOf()
 );
-console.log({ plans });
-// const plans: Array<Plan> = [
-//     {
-//         key: 'first-post',
-//         title: '東京直下72hTOURと目黒寄生虫館の旅',
-//         // date: '08/24(土) 12:30 〜',
-//         startTime: '12:30 〜',
-//         place: '有明駅改札',
-//         capacity: '4 / 9人',
-//         // label: '募集中！',
-//         image: '/images/kiseichu-jishin.webp',
-//     },
-//     {
-//         key: 'second-post',
-//         title: 'かがや会',
-//         // date: '09/20(金) 19:30 〜',
-//         startTime: '19:30 〜',
-//         place: 'かがや(旗の台)',
-//         capacity: '8 / 12人',
-//         // label: '募集中！',
-//         image: '/images/kagaya04.webp',
-//     },
-// ];
 ---
 
 <!DOCTYPE html>
