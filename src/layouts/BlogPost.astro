@@ -3,11 +3,10 @@ import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import FormattedDate from '../components/FormattedDate.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, date, heroImage, heroImageFromUrl, heroImageFromName } = Astro.props;
 ---
 
 <html lang="en">
@@ -25,8 +24,6 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			.hero-image img {
 				display: block;
 				margin: 0 auto;
-				border-radius: 12px;
-				box-shadow: var(--box-shadow);
 			}
 			.prose {
 				width: 720px;
@@ -38,7 +35,6 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			.title {
 				margin-bottom: 1em;
 				padding: 1em 0;
-				text-align: center;
 				line-height: 1;
 			}
 			.title h1 {
@@ -51,27 +47,42 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			.last-updated-on {
 				font-style: italic;
 			}
+			.image-quote {
+				font-size: 0.8em;
+				color: #999999;
+			}
+			.image-quote a {
+				color: #999999;
+			}
+			.to-top {
+				display: block;
+				margin: .6em 0 0 1em;
+				font-weight: bold;
+				font-size: 1.2em;
+				color: #444444;
+				text-decoration: none;
+			}
+			.to-top:hover {
+				color: lime;
+			}
 		</style>
 	</head>
 
 	<body>
+		<a href="/" class="to-top">珍スポ研究室</a>
 		<main>
 			<article>
-				<div class="hero-image">
-					{heroImage && <img width={1020} height={510} src={heroImage} alt="" />}
-				</div>
 				<div class="prose">
+					<div class="hero-image">
+						{heroImage && <img src={heroImage} alt={title} />}
+					</div>
+					{ heroImageFromUrl && (
+  					  <blockquote class="image-quote" style="margin-top: 12px;">
+						  画像: <a href={heroImageFromUrl}>{heroImageFromName}</a>より引用
+					    </blockquote>
+					  )
+					}
 					<div class="title">
-						<div class="date">
-							<FormattedDate date={pubDate} />
-							{
-								updatedDate && (
-									<div class="last-updated-on">
-										Last updated on <FormattedDate date={updatedDate} />
-									</div>
-								)
-							}
-						</div>
 						<h1>{title}</h1>
 						<hr />
 					</div>
@@ -79,6 +90,5 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				</div>
 			</article>
 		</main>
-		<Footer />
 	</body>
 </html>

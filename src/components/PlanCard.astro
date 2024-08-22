@@ -1,60 +1,64 @@
 ---
+import type { Plan } from '../types';
+
 interface Props {
-	title: string;
-	image: string;
-    place: string;
-    startTime: string;
-    capacity: string;
+    plan: Plan;
 }
-const { title, image, place, startTime, capacity } = Astro.props;
+const { key, title, heroImage, place, date, startTime, capacity } = Astro.props.plan;
+const monthText = String(date.getMonth() + 1).padStart(2, '0');
+const dayText = String(date.getDate()).padStart(2, '0');
+const weekText = ['日', '月', '火', '水', '木', '金', '土'][date.getDay()];
 ---
-<div class="event">
+<a class="plan" href={`/blog/${key}`}>
   <div class="image-wrapper">
-      <img src={image} alt={title}>
+      <img src={heroImage} alt={title}>
   </div>
-  <div class="event-content">
+  <div class="plan-content">
       <div class="date">
-          <div class="date-month">09</div>
+          <div class="date-month">{monthText}</div>
           <div class="date-deli">/</div>
-          <div class="date-day">20</div>
-          <div class="date-week">(金)</div>
+          <div class="date-day">{dayText}</div>
+          <div class="date-week">({weekText})</div>
       </div>
-      <div class="event-desc">
-          <div class="event-hour">{startTime}</div>
-          <div class="event-place">{place}</div>
-          <div class="event-title">{title}</div>
-          <div class="event-capacity">{capacity}</div>
+      <div class="plan-desc">
+          <div class="plan-hour">{startTime}</div>
+          <div class="plan-place">{place}</div>
+          <div class="plan-title">{title}</div>
+          <div class="plan-capacity">{capacity}</div>
       </div>
   </div>
-  <div class="event-label">募集中！</div>
+  <div class="plan-label">募集中！</div>
 </div>
 <style>
-.event {
-            background-color: white;
+.plan {
+    color: #222222;
+    text-decoration: none;
+    background-color: white;
             width: 100%;
             position: relative;
+            box-shadow: var(--box-shadow);
         }
         @media (min-width: 480px) {
-          .event {
+          .plan {
             width: 400px;
           }
         }
         @media (min-width: 720px) {
-          .event {
+          .plan {
             width: 340px;
           }
         }
-        .event img {
+        .plan img {
             width: 100%;
             height: 120px;
             object-fit: cover;
             display: block;
         }
-        .event .event-content {
+        .plan .plan-content {
             padding: 8px;
             display: flex;
         }
-        .event .date {
+        .plan .date {
             width: 56px;
             display: flex;
             flex-direction: column;
@@ -62,45 +66,45 @@ const { title, image, place, startTime, capacity } = Astro.props;
             font-size: 1.2rem;
             flex-shrink: 0;
         }
-        .event .date-month {
+        .plan .date-month {
             align-self: start;
         }
-        .event .date-deli {
+        .plan .date-deli {
             font-size: 2rem;
             transform: rotate(20deg);
             margin: -1.5rem 0 -1.5rem 0;
         }
-        .event .date-day {
+        .plan .date-day {
             align-self: end
         }
-        .event .date-week {
+        .plan .date-week {
             margin-top: -2px;
         }
-        .event .event-desc {
+        .plan .plan-desc {
             padding: 0 0 0 20px;
             display: flex;
             flex-direction: column;
             flex-grow: 1;
         }
-        .event .event-hour {
+        .plan .plan-hour {
             font-size: .8rem;
             font-weight: 600;
         }
-        .event .event-place {
+        .plan .plan-place {
             font-size: .8rem;
             color: #999999;
         }
-        .event .event-title {
+        .plan .plan-title {
             font-weight: 600;
             margin-top: 4px;
         }
-        .event .event-capacity {
+        .plan .plan-capacity {
             margin-top: 4px;
             font-size: 1.2rem;
             color: #999999;
             text-align: right;
         }
-        .event .event-label {
+        .plan .plan-label {
             position: absolute;
             bottom: 0;
             left: 4px;

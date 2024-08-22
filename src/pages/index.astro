@@ -2,8 +2,40 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import EventCard from '../components/EventCard.astro';
+import PlanCard from '../components/PlanCard.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { getCollection } from 'astro:content';
+import type { Plan } from '../types';
+
+// getCollection('blog').then((posts) => {
+//     console.log(posts);
+// });
+const plans = (await getCollection('blog')).sort(
+	(a, b) => a.data.date.valueOf() - b.data.date.valueOf()
+);
+console.log({ plans });
+// const plans: Array<Plan> = [
+//     {
+//         key: 'first-post',
+//         title: '東京直下72hTOURと目黒寄生虫館の旅',
+//         // date: '08/24(土) 12:30 〜',
+//         startTime: '12:30 〜',
+//         place: '有明駅改札',
+//         capacity: '4 / 9人',
+//         // label: '募集中！',
+//         image: '/images/kiseichu-jishin.webp',
+//     },
+//     {
+//         key: 'second-post',
+//         title: 'かがや会',
+//         // date: '09/20(金) 19:30 〜',
+//         startTime: '19:30 〜',
+//         place: 'かがや(旗の台)',
+//         capacity: '8 / 12人',
+//         // label: '募集中！',
+//         image: '/images/kagaya04.webp',
+//     },
+// ];
 ---
 
 <!DOCTYPE html>
@@ -107,87 +139,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
             color: #ffffff;
             font-size: 2rem;
         }
-        .event {
-            background-color: white;
-            width: 100%;
-            position: relative;
-        }
-        @media (min-width: 480px) {
-          .event {
-            width: 400px;
-          }
-        }
-        @media (min-width: 720px) {
-          .event {
-            width: 340px;
-          }
-        }
-        .event img {
-            width: 100%;
-            height: 120px;
-            object-fit: cover;
-            display: block;
-        }
-        .event .event-content {
-            padding: 8px;
-            display: flex;
-        }
-        .event .date {
-            width: 56px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-size: 1.2rem;
-            flex-shrink: 0;
-        }
-        .event .date-month {
-            align-self: start;
-        }
-        .event .date-deli {
-            font-size: 2rem;
-            transform: rotate(20deg);
-            margin: -1.5rem 0 -1.5rem 0;
-        }
-        .event .date-day {
-            align-self: end
-        }
-        .event .date-week {
-            margin-top: -2px;
-        }
-        .event .event-desc {
-            padding: 0 0 0 20px;
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-        }
-        .event .event-hour {
-            font-size: .8rem;
-            font-weight: 600;
-        }
-        .event .event-place {
-            font-size: .8rem;
-            color: #999999;
-        }
-        .event .event-title {
-            font-weight: 600;
-            margin-top: 4px;
-        }
-        .event .event-capacity {
-            margin-top: 4px;
-            font-size: 1.2rem;
-            color: #999999;
-            text-align: right;
-        }
-        .event .event-label {
-            position: absolute;
-            bottom: 0;
-            left: 4px;
-            color: rgba(255, 0, 0, 0.8);
-            padding: 4px;
-            font-size: 1.2rem;
-            font-weight: bold;
-        }
-        @keyframes float {
+@keyframes float {
   0% {
     background-position: center;
   }
@@ -206,57 +158,22 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     <h1>珍スポ研究室</h1>
     <div class="description">
        <p>珍スポ研究室とは、珍スポット（B級スポット）が好きな人たちが集まるコミュニティです。</p>
-       <p>主な活動場所はLINEのオープンチャットです。</p>
+       <p>主にLINEオープンチャットで活動しています。</p>
     </div>
 </section>
 <section id="future-events" class="events-section">
     <h2>これからのイベント</h1>
     <div class="event-list">
-        <div class="event">
-            <div class="image-wrapper">
-                <img src="./images/kiseichu-jishin.webp" alt="東京直下72hTOURと目黒寄生虫館の旅">
-            </div>
-            <div class="event-content">
-                <div class="date">
-                    <div class="date-month">08</div>
-                    <div class="date-deli">/</div>
-                    <div class="date-day">24</div>
-                    <div class="date-week">(土)</div>
-                </div>
-                <div class="event-desc">
-                    <div class="event-hour">12:30 〜</div>
-                    <div class="event-place">集合: 有明駅改札</div>
-                    <div class="event-title">東京直下72hTOURと目黒寄生虫館の旅</div>
-                    <div class="event-capacity">4 / 9人</div>
-                </div>
-            </div>
-            <div class="event-label">募集中！</div>
-        </div>
-        <div class="event">
-            <div class="image-wrapper">
-                <img src="./images/kagaya04.webp" alt="かがや会">
-            </div>
-            <div class="event-content">
-                <div class="date">
-                    <div class="date-month">09</div>
-                    <div class="date-deli">/</div>
-                    <div class="date-day">20</div>
-                    <div class="date-week">(金)</div>
-                </div>
-                <div class="event-desc">
-                    <div class="event-hour">19:30 〜</div>
-                    <div class="event-place">会場: かがや(旗の台)</div>
-                    <div class="event-title">かがや会</div>
-                    <div class="event-capacity">8 / 12人</div>
-                </div>
-            </div>
-            <div class="event-label">募集中！</div>
-        </div>
+      {
+			  plans.map((plan) => (
+          <PlanCard plan={{ key: plan.slug, ...plan.data}} />
+        ))
+      }
     </div>
 </section>
 <section id="passed-events" class="events-section">
     <h2>過去のイベント</h1>
-    <div class="empty-events">なし</div>
+    <div class="empty-events">工事中...</div>
 </section>
 </body>
 </html>
