@@ -1,15 +1,15 @@
 ---
 import PlanCard from '../components/PlanCard.astro';
 import { getCollection } from 'astro:content';
-import { getMidnight } from '../lib/DateUtil';
+import { getMidnight, japanDate } from '../lib/DateUtil';
 
 const midnight = getMidnight(new Date());
 
 const plans = (await getCollection('blog')).sort(
 	(a, b) => a.data.date.valueOf() - b.data.date.valueOf()
 );
-const futurePlans = plans.filter((plan) => plan.data.date.getTime() >= midnight.getTime());
-const pastPlans = plans.filter((plan) => plan.data.date.getTime() < midnight.getTime());
+const futurePlans = plans.filter((plan) => japanDate(plan.data.date).getTime() >= midnight.getTime());
+const pastPlans = plans.filter((plan) => japanDate(plan.data.date).getTime() < midnight.getTime());
 ---
 
 <!DOCTYPE html>
