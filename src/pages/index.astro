@@ -1,11 +1,6 @@
 ---
-// import BaseHead from '../components/BaseHead.astro';
-// import Header from '../components/Header.astro';
-// import Footer from '../components/Footer.astro';
 import PlanCard from '../components/PlanCard.astro';
-// import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { getCollection } from 'astro:content';
-// import type { Plan } from '../types';
 
 const plans = (await getCollection('blog')).sort(
 	(a, b) => a.data.date.valueOf() - b.data.date.valueOf()
@@ -61,6 +56,41 @@ const plans = (await getCollection('blog')).sort(
             background-color: rgba(0, 0, 0, 0.4);
             color: #ffffff;
             padding: 12px;
+        }
+        .sns-list {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          margin: 0 auto;
+          gap: 24px;
+        }
+
+        @media (min-width: 1076px) {
+          .sns-list {
+            flex-direction: row;
+          }
+        }
+        .sns-button {
+            display: flex;
+            max-width: 100%;
+            padding: 12px 16px;
+            background: linear-gradient(90deg, #10CAC3 0%, #07C662 100%);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 12px;
+            align-items: center;
+        }
+        @media (min-width: 1076px) {
+          .sns-button {
+            width: 526px;
+          }
+        }
+        .sns-button img {
+          margin-right: 12px;
+          border-radius: 50%;
+        }
+        .sns-title {
+          font-weight: bold;
         }
         section h2 {
             color: lime;
@@ -134,6 +164,27 @@ const plans = (await getCollection('blog')).sort(
        <p>珍スポ研究室とは、珍スポット（B級スポット）が好きな人たちが集まるコミュニティです。</p>
        <p>主にLINEオープンチャットで活動しています。</p>
     </div>
+</section>
+<section id="sns" class="events-section">
+  <h2>SNS</h1>
+  <div class="sns-list">
+    <a class="sns-button" href="https://line.me/ti/g2/o6s0F62sSXO5k_dkl6xukS_pzeEnu6_5WAAJ2w">
+      <img src="/images/chinspot-kenkyu.png" width="48" height="48" alt="珍スポ研究室" />
+      <div>
+        <div class="sns-title">珍スポ研究室</div>
+        <p>珍スポの情報を共有するLINEオープンチャットです。</p>
+        <p>こちらがメインの活動場所になります。</p>
+      </div>
+    </a>
+    <a class="sns-button" href="https://line.me/ti/g2/PZfs6bwr4EejequqSQYxW5Xc3zFotxYJqI3S0w">
+      <img src="/images/chinspot-tanken.png" width="48" height="48" alt="珍スポ探検隊" />
+      <div>
+        <div class="sns-title">珍スポ探検隊</div>
+        <p>オフ会用LINEオープンチャットです。</p>
+        <p>オフ会参加希望の方はお入りください。</p>
+      </div>
+    </a>
+  </div>
 </section>
 <section id="future-events" class="events-section">
     <h2>これからのイベント</h1>
