@@ -4,7 +4,7 @@ import type { Plan } from '../types';
 interface Props {
     plan: Plan;
 }
-const { key, title, heroImage, place, date, startTime, capacity } = Astro.props.plan;
+const { key, title, heroImage, place, date, startTime, capacity, label} = Astro.props.plan;
 const monthText = String(date.getMonth() + 1).padStart(2, '0');
 const dayText = String(date.getDate()).padStart(2, '0');
 const weekText = ['日', '月', '火', '水', '木', '金', '土'][date.getDay()];
@@ -27,7 +27,9 @@ const weekText = ['日', '月', '火', '水', '木', '金', '土'][date.getDay()
           <div class="plan-capacity">{capacity}</div>
       </div>
   </div>
-  <div class="plan-label">募集中！</div>
+  {
+    label && <div class="plan-label">{label}</div>
+  }
 </div>
 <style>
 .plan {

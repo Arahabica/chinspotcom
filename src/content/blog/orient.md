@@ -8,6 +8,7 @@ heroImageFromName: 'リアルラブドール オリエント工業'
 startTime: '14:50 〜'
 place: 'JR御徒町駅南口改札'
 capacity: '7 / 8人'
+label: ''
 ---
 ## 概要
 
