@@ -8,7 +8,7 @@ heroImageFromName: 'はらふみチャンネル'
 startTime: '12:30 〜'
 place: '有明駅改札'
 capacity: '4 / 9人'
-label: '募集中！'
+label: ''
 ---
 
 ## 概要
