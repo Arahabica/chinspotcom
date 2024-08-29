@@ -1,5 +1,6 @@
 ---
 import PlanCard from '../components/PlanCard.astro';
+import BaseHead from '../components/BaseHead.astro';
 import { getCollection } from 'astro:content';
 import { getMidnight, japanDate } from '../lib/DateUtil';
 
@@ -10,15 +11,19 @@ const plans = (await getCollection('blog')).sort(
 );
 const futurePlans = plans.filter((plan) => japanDate(plan.data.date).getTime() >= midnight.getTime());
 const pastPlans = plans.filter((plan) => japanDate(plan.data.date).getTime() < midnight.getTime());
+const title = "珍スポ研究室";
+const description = "珍スポ研究室とは、珍スポット（B級スポット）が好きな人たちが集まるコミュニティです。\n主にLINEオープンチャットで活動しています。";
+const image = "/images/chin.png";
 ---
 
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="珍スポ研究室とは、珍スポット（B級スポット）が好きな人たちが集まるコミュニティです。\n主にLINEオープンチャットで活動しています。">
-    <title>珍スポ研究室</title>
+    <BaseHead
+      title={title}
+      description={description}
+      image={image}
+    />
     <style>
         html, body {
             margin: 0;
@@ -74,21 +79,34 @@ const pastPlans = plans.filter((plan) => japanDate(plan.data.date).getTime() < m
         @media (min-width: 1076px) {
           .sns-list {
             flex-direction: row;
+            flex-wrap: wrap;
           }
         }
         .sns-button {
             display: flex;
             max-width: 100%;
+            min-height: 72px;
             padding: 12px 16px;
-            background: linear-gradient(90deg, #10CAC3 0%, #07C662 100%);
-            color: #ffffff;
             text-decoration: none;
             border-radius: 12px;
             align-items: center;
         }
+        .line-button {
+            background: linear-gradient(90deg, #10CAC3 0%, #07C662 100%);
+            color: #ffffff;
+        }
+        .x-button {
+            background: #000000;
+            color: #ffffff;
+            box-shadow: 0 0 8px 3px rgba(255, 255, 255, 0.12);
+        }
+        .instagram-button {
+            color: #ffffff;
+            background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+        }
         @media (min-width: 1076px) {
           .sns-button {
-            width: 526px;
+            width: 482px;
           }
         }
         .sns-button img {
@@ -97,6 +115,9 @@ const pastPlans = plans.filter((plan) => japanDate(plan.data.date).getTime() < m
         }
         .sns-title {
           font-weight: bold;
+        }
+        .sns-content {
+          height: 100%;
         }
         section h2 {
             color: lime;
@@ -174,20 +195,36 @@ const pastPlans = plans.filter((plan) => japanDate(plan.data.date).getTime() < m
 <section id="sns" class="events-section">
   <h2>SNS</h1>
   <div class="sns-list">
-    <a class="sns-button" href="https://line.me/ti/g2/o6s0F62sSXO5k_dkl6xukS_pzeEnu6_5WAAJ2w">
-      <img src="/images/chinspot-kenkyu.png" width="48" height="48" alt="珍スポ研究室" />
-      <div>
+    <a class="sns-button line-button" href="https://line.me/ti/g2/o6s0F62sSXO5k_dkl6xukS_pzeEnu6_5WAAJ2w" target="_blank">
+      <img src="/images/chinspot-kenkyu.png" width="48" height="48" alt="LINE|珍スポ研究室" />
+      <div class="sns-content">
         <div class="sns-title">珍スポ研究室</div>
         <p>珍スポの情報を共有するLINEオープンチャットです。</p>
         <p>こちらがメインの活動場所になります。</p>
       </div>
     </a>
-    <a class="sns-button" href="https://line.me/ti/g2/PZfs6bwr4EejequqSQYxW5Xc3zFotxYJqI3S0w">
-      <img src="/images/chinspot-tanken.png" width="48" height="48" alt="珍スポ探検隊" />
-      <div>
+    <a class="sns-button line-button" href="https://line.me/ti/g2/PZfs6bwr4EejequqSQYxW5Xc3zFotxYJqI3S0w" target="_blank">
+      <img src="/images/chinspot-tanken.png" width="48" height="48" alt="LINE|珍スポ探検隊" />
+      <div class="sns-content">
         <div class="sns-title">珍スポ探検隊</div>
         <p>オフ会用LINEオープンチャットです。</p>
         <p>オフ会参加希望の方はお入りください。</p>
+      </div>
+    </a>
+    <a class="sns-button x-button" href="https://x.com/chinspotcom" target="_blank">
+      <img src="/images/chinspotcom.jpg" width="48" height="48" alt="X|珍スポ研究室" />
+      <div class="sns-content">
+        <div class="sns-title">珍スポ研究室</div>
+        <p>@chinspotcom</p>
+        <p>公式Xです。</p>
+      </div>
+    </a>
+    <a class="sns-button instagram-button" href="https://www.instagram.com/chinspotcom" target="_blank">
+      <img src="/images/chinspotcom.jpg" width="48" height="48" alt="Instagram|珍スポ研究室" />
+      <div class="sns-content">
+        <div class="sns-title">珍スポ研究室</div>
+        <p>@chinspotcom</p>
+        <p>公式Instagramです。</p>
       </div>
     </a>
   </div>
