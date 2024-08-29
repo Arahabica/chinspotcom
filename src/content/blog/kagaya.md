@@ -1,6 +1,6 @@
 ---
 title: 'かがや会'
-description: ''
+description: '伝説的な狂気の居酒屋かがやにみんなで行こうという企画です。'
 date: '2024/09/20'
 heroImage: '/images/kagaya.webp'
 heroImageFromUrl: 'https://ghus400.gorp.jp'

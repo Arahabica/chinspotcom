@@ -1,6 +1,6 @@
 ---
 title: 'オリエント工業見学'
-description: ''
+description: 'オリエント工業の事業終了の前に、最後にオリエント工業のショールームに行こうという企画です。'
 date: '2024/08/23'
 heroImage: '/images/orient.jpg'
 startTime: '14:50 〜'

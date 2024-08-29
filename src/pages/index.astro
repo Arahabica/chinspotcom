@@ -1,6 +1,6 @@
 ---
 import PlanCard from '../components/PlanCard.astro';
-import BaseHead from '../components/BaseHead.astro';
+import IndexHead from '../components/IndexHead.astro';
 import { getCollection } from 'astro:content';
 import { getMidnight, japanDate } from '../lib/DateUtil';
 
@@ -19,7 +19,7 @@ const image = "/images/chin.png";
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <BaseHead
+    <IndexHead
       title={title}
       description={description}
       image={image}
