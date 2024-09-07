@@ -1,0 +1,112 @@
+---
+const {alt, url} = Astro.props;
+---
+<div class="adult-image-wrapper adult-filter">
+  <img src={url} alt={alt} class="adult-image" width={800} />
+  <div class="adult-warning">
+    <div class="adult-warning-content">
+      <div class="adult-warning-title">18禁</div>
+      <div class="adult-warning-desc">18歳未満の方は表示しないでください</div>
+      <button class="i-am-adult">表示</button>
+    </div>
+  </div>
+</div>
+<script>
+const buttons = document.querySelectorAll('.adult-image-wrapper button');
+if (buttons) {
+  buttons.forEach(button => {
+    button.addEventListener('click', function(this: HTMLElement) {
+      const wrapper = this.closest('.adult-image-wrapper')
+      if (!wrapper) return;
+      wrapper.classList.toggle('adult-filter');
+    });
+  });
+}
+</script>
+
+<style>
+  .adult-image-wrapper {
+    margin: 48px 0;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .adult-image {
+    width: 100%;
+    height: auto;
+    transition: all 0.5s;
+  }
+  .adult-filter .adult-image {
+    filter: blur(28px);
+  }
+  .adult-filter:hover .adult-image {
+    filter: blur(24px);
+  }
+  .adult-filter .adult-warning {
+    display: flex;
+  }
+  .adult-warning-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .adult-warning {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    background-color: rgba(168, 9, 128, 0.4);
+    transition: all 0.5s;
+  }
+  .adult-warning:hover {
+    background-color: rgba(168, 9, 128, 0.2);
+  }
+  .adult-warning-content {
+    font-size: 1.2em;
+    color: #ffffff;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 24px;
+  }
+
+  @media (max-width: 390px) {
+    .adult-warning-content {
+      padding: 8px;
+    }
+  }
+
+  .adult-warning-title {
+    font-size: 3em;
+  }
+  .adult-warning-desc {
+    font-size: 1.2em;
+  }
+  .adult-warning button {
+    margin-top: 24px;
+    padding: 12px 24px;
+    border: 2px solid #ffffff;
+    background: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 6px;
+  }
+  @media (max-width: 480px) {
+    .adult-warning-title {
+      font-size: 2em;
+    }
+    .adult-warning-desc {
+      font-size: .8em;
+    }
+    button {
+      font-size: 1em;
+    }
+  }
+</style>
