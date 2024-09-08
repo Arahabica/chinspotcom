@@ -35,4 +35,4 @@ label: 'キャンセル待ち'
 
 ## お問い合わせ
 
-疑問点や質問がある人はLINE ID: arahabica か https://twitter.com/Arahabica で直接ご連絡ください。
+疑問点や質問がある人はLINE ID: arahabica か [𝕏 (珍スポ研究室)](https://x.com/chinspotcom)で直接ご連絡ください。

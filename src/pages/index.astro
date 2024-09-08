@@ -6,11 +6,17 @@ import { getMidnight, japanDate } from '../lib/DateUtil';
 
 const midnight = getMidnight(new Date());
 
-const plans = (await getCollection('blog')).sort(
-	(a, b) => a.data.date.valueOf() - b.data.date.valueOf()
-);
-const futurePlans = plans.filter((plan) => japanDate(plan.data.date).getTime() >= midnight.getTime());
-const pastPlans = plans.filter((plan) => japanDate(plan.data.date).getTime() < midnight.getTime());
+const plans = (await getCollection('blog'));
+const futurePlans = plans
+  .filter((plan) => japanDate(plan.data.date).getTime() >= midnight.getTime())
+  .sort(
+	  (a, b) => a.data.date.valueOf() - b.data.date.valueOf()
+  );
+const pastPlans = plans
+  .filter((plan) => japanDate(plan.data.date).getTime() < midnight.getTime())
+  .sort(
+	  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+  );
 const title = "珍スポ研究室";
 const description = "珍スポ研究室とは、珍スポット（B級スポット）が好きな人たちが集まるコミュニティです。\n主にLINEオープンチャットで活動しています。";
 const image = "/images/chin.png";
@@ -164,11 +170,16 @@ const image = "/images/chin.png";
         .event-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 16px;
+            gap: 24px 16px;
         }
         .empty-events {
             color: #ffffff;
             font-size: 2rem;
+        }
+        footer {
+            text-align: center;
+            color: #ffffff;
+            padding: 60px 0 48px 0;
         }
 @keyframes float {
   0% {
@@ -249,5 +260,8 @@ const image = "/images/chin.png";
       }
     </div>
 </section>
+<footer>
+    <p>© 2024 珍スポ研究室</p>
+</footer>
 </body>
 </html>
