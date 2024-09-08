@@ -69,6 +69,28 @@ const { title, description, heroImage, heroImageFromUrl, heroImageFromName } = A
 			.to-top:hover {
 				color: lime;
 			}
+			.bottom-buttons {
+				margin-top: 40px;
+				display: flex;
+				justify-content: center;
+			}
+			.bottom-buttons a {
+        display: block;
+        max-width: 100%;
+				min-width: 240px;
+        padding: 12px 16px;
+        text-decoration: none;
+        border-radius: 12px;
+				text-align: center;
+				background-color: #333333;
+				color: lime;
+				box-shadow: 0px 0px 0px 0px rgba(19, 21, 26, 0.30), 0px 1px 2px 0px rgba(19, 21, 26, 0.29), 0px 4px 4px 0px rgba(19, 21, 26, 0.26), 0px 10px 6px 0px rgba(19, 21, 26, 0.15), 0px 17px 7px 0px rgba(19, 21, 26, 0.04), 0px 26px 7px 0px rgba(19, 21, 26, 0.01);
+			}
+      footer {
+        text-align: center;
+        color: #222222;
+        padding: 60px 0 48px 0;
+      }
 		</style>
 	</head>
 
@@ -94,5 +116,11 @@ const { title, description, heroImage, heroImageFromUrl, heroImageFromName } = A
 				</div>
 			</article>
 		</main>
+		<div class="bottom-buttons">
+			<a href="/">珍スポ研究室 トップに戻る</a>
+		</div>
+		<footer>
+			<p>© 2024 珍スポ研究室</p>
+		</footer>
 	</body>
 </html>
