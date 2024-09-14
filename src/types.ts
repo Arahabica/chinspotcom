@@ -9,4 +9,5 @@ export type Plan = {
   description: string;
   date: Date;
   updatedDate?: Date;
+  dateTbd?: boolean;
 }
