@@ -5,8 +5,8 @@ date: '2024/09/23'
 heroImage: '/images/daikeien/daikeien.jpg'
 heroImageFromUrl: 'http://www.daikeien.jp/'
 heroImageFromName: 'ＤＡＩＫＥＩＥＮ'
-startTime: '開始時間未定'
-place: '集合場所未定'
+startTime: '10:00 〜'
+place: '東京駅・西船橋駅'
 capacity: '8 / 9人'
 label: '開催決定'
 ---
@@ -21,16 +21,18 @@ label: '開催決定'
 
 ## 集合
 
-未定
+東京駅八重洲北口改札 10時集合
+西船橋駅北側ロータリー 10時集合
 
 ## 旅程
 
-未定
+10:00 東京駅東京駅八重洲北口改札集合
+10:50 大慶園着
+
+10:00 西船橋駅北側ロータリー集合
+10:30 大慶園着
+
 
 ## 参加費用
 
-未定
-
-## お問い合わせ
-
-疑問点や質問がある人はLINE ID: arahabica か [𝕏 (珍スポ研究室)](https://x.com/chinspotcom) で直接ご連絡ください。
+各自現地支払い
