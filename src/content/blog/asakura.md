@@ -1,13 +1,12 @@
 ---
 title: 'あさくら画廊探訪'
 description: '足立区の公園とあさくら画廊を巡ります。'
-date: '2024/10/01'
+date: '2024/10/19'
 heroImage: '/images/asakura/asakura_800x.webp'
 startTime: '12:30 〜'
 place: '東京駅八重洲北口改札'
-capacity: '1 / 8人'
-label: ''
-dateTbd: true
+capacity: '5 / 8人'
+label: '募集中'
 ---
 
 ## 概要
