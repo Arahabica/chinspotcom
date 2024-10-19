@@ -6,7 +6,7 @@ heroImage: '/images/asakura/asakura_800x.webp'
 startTime: '13:00 〜'
 place: '日暮里・舎人ライナー舎人駅改札'
 capacity: '7 / 8人'
-label: '募集中'
+label: ''
 ---
 
 ## 概要
