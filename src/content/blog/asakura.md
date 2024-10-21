@@ -2,7 +2,7 @@
 title: 'あさくら画廊探訪'
 description: '足立区の公園とあさくら画廊を巡ります。'
 date: '2024/10/19'
-heroImage: '/images/asakura/asakura_800x.webp'
+heroImage: '/images/asakura/asakura01_800x.webp'
 startTime: '13:00 〜'
 place: '日暮里・舎人ライナー舎人駅改札'
 capacity: '7 / 8人'
@@ -17,36 +17,31 @@ label: ''
 
 ### 舎人いきいき公園
 
-![舎人いきいき公園](/images/asakura/toneriikiki_800x.webp)
-> 画像: [公園探訪](https://www.koentanbo.com/toneriikiiki/) より引用
+![舎人いきいき公園](/images/asakura/toneri_ikiki01_800x.webp)
 
 おとぎ話にちなんだ遊具がたくさんある公園。
 
 ### 伊興遺跡公園
 
-![伊興遺跡公園](/images/asakura/ioki_800x.webp)
->  画像:　[足立区](https://www.city.adachi.tokyo.jp/bunka/ikoisekisyokai2019.html)　より引用
+![伊興遺跡公園](/images/asakura/ikou_iseki_800x.webp)
 
 復元された竪穴住居などがある公園。
 
 ### 白旗塚史跡公園
 
-![白旗塚史跡公園](/images/asakura/shirahata_800x.webp)
->  画像:　[東京を散歩する](https://www.tokyo-walk.com/park/shirahatadukashisekikouen.html)　より引用
+![白旗塚史跡公園](/images/asakura/shirahataduka01_800x.webp)
 
 埴輪のオブジェや古代文字が書かれた岩がある不思議な公園。
 
 ### あさくら画廊
 
-![あさくら画廊](/images/asakura/asakura_800x.webp)
->  画像:　[あさくら画廊](https://asakura11garo.online/index.php/2022/09/27/20220927/)　より引用
+![あさくら画廊](/images/asakura/asakura01_800x.webp)
 
 住宅街に突如現れるピンク色の民家。中もピンク尽くしだ。
 
 ### エスディコーヒー 北千住本店
 
-![エスディコーヒー 北千住本店](/images/asakura/sdcoffee_800x.webp)
->  画像:　[湯活のススメ](https://yukatsu.hatenablog.com/entry/2022/06/03/%E3%82%A8%E3%82%B9%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC%EF%BD%9C%E5%8C%97%E5%8D%83%E4%BD%8F%EF%BD%9C%E6%B9%AF%E6%B4%BB%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%EF%BC%88%E9%8A%AD)　より引用
+![エスディコーヒー 北千住本店](/images/asakura/sdcoffee01_800x.webp)
 
 銭湯&デンキ屋をコンセプトにした変わり種のカフェ。
 
