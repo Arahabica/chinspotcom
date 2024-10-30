@@ -278,6 +278,11 @@ const image = "/images/chin.png";
       body.style.backgroundImage = `url('${image.src}')`;
     }, 300);
   }
+  const images = document.querySelectorAll('.event-list .plan img');
+  images.forEach(img => {
+    img.setAttribute('loading', 'lazy');
+    img.setAttribute('decoding', 'async');
+  });
 </script>
 </body>
 </html>
