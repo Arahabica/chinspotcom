@@ -7,7 +7,7 @@ heroImageFromUrl: 'https://www.japan-cafe.com/archives/19392596.html'
 heroImageFromName: 'ケネディ電気の自由な世界! : 純喫茶ヒッピー（HIPPIE HAPPY）～1980年から喫茶巡り'
 startTime: '09:30 〜'
 place: '東京駅八重洲北口改札前'
-capacity: '7 / 12人'
+capacity: '6 / 12人'
 label: '募集中'
 ---
 
