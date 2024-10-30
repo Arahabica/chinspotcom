@@ -271,8 +271,10 @@ const image = "/images/chin.png";
 </footer>
 <script>
   function isImageCached(src) {
+    console.log({ src });
     const entries = performance.getEntriesByType('resource');
     const entry = entries.find(entry => entry.name === src);
+    console.log({ entries });
   
     if (!entry || typeof entry.transferSize === 'undefined') {
       return false;
@@ -284,7 +286,7 @@ const image = "/images/chin.png";
   const body = document.body;
   const image = new Image();
   image.src = '/images/chinspot-back.webp';
-  if (isImageCached(location.origin + image.src)) {
+  if (isImageCached(image.src)) {
     console.log('cached...');
     body.style.backgroundImage = `url('${image.src}')`;
   } else {
