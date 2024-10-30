@@ -2,7 +2,7 @@
 title: '大慶園'
 description: '千葉謎のアミューズメントパーク「大慶園」に行きます。'
 date: '2024/09/23'
-heroImage: '/images/daikeien/daikeien.jpg'
+heroImage: '/images/daikeien/daikeien_800x.webp'
 heroImageFromUrl: 'http://www.daikeien.jp/'
 heroImageFromName: 'ＤＡＩＫＥＩＥＮ'
 startTime: '10:00 〜'
