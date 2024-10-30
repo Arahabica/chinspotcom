@@ -2,7 +2,7 @@
 title: '東京直下72hTOURと目黒寄生虫館の旅'
 description: '首都直下地震の発生~避難までを体験できる東京直下72hTOURと目黒寄生虫館をめぐる企画です。'
 date: '2024/08/24'
-heroImage: '/images/hebikubo.jpg'
+heroImage: '/images/hebikubo_800x.webp'
 startTime: '12:30 〜'
 place: '有明駅改札'
 capacity: '4 / 9人'
