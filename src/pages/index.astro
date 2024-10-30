@@ -274,7 +274,7 @@ const image = "/images/chin.png";
     const entries = performance.getEntriesByType('resource');
     const entry = entries.find(entry => entry.name === src);
   
-    if (!(entry && typeof entry.transferSize !== 'undefined')) {
+    if (!entry || typeof entry.transferSize === 'undefined') {
       return false;
     }
     // transferSizeが0の場合、キャッシュから読み込まれている
@@ -284,7 +284,7 @@ const image = "/images/chin.png";
   const body = document.body;
   const image = new Image();
   image.src = '/images/chinspot-back.webp';
-  if (isImageCached(image.src)) {
+  if (isImageCached(location.origin + image.src)) {
     console.log('cached...');
     body.style.backgroundImage = `url('${image.src}')`;
   } else {
