@@ -40,7 +40,7 @@ const image = "/images/chin.png";
         }
         body {
             font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
-            background: url("/images/chinspot-back.jpg") no-repeat center center fixed;
+            background: url("/images/chinspot-back-small.webp") no-repeat center center fixed;
             animation: float 0.14s ease-in-out .4s 3;
             background-size: auto calc(100% + 20px);
             background-color: black;
@@ -269,5 +269,15 @@ const image = "/images/chin.png";
 <footer>
     <p>© 2024 珍スポ研究室</p>
 </footer>
+<script>
+  const body = document.body;
+  const image = new Image();
+  image.src = '/images/chinspot-back.webp';
+  image.onload = function() {
+    setTimeout(() => {
+      body.style.backgroundImage = `url('${image.src}')`;
+    }, 300);
+  }
+</script>
 </body>
 </html>
