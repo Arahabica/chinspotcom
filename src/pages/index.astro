@@ -270,30 +270,18 @@ const image = "/images/chin.png";
     <p>© 2024 珍スポ研究室</p>
 </footer>
 <script>
-  function isImageCached(src: string): boolean {
-    console.log({ src });
-    const entries = performance.getEntriesByType('resource');
-    const entry = entries.find(entry => entry.name === src);
-    console.log({ entries });
-    if (!entry || entry.entryType !== 'resource') {
-      return false;
-    }
-    // @ts-ignore
-    const transferSize: number = entry.transferSize as number;
-    return transferSize === 0;
-  }
   const body = document.body;
   const image = new Image();
   image.src = '/images/chinspot-back.webp';
-  if (isImageCached(image.src)) {
-    console.log('cached...');
-    body.style.backgroundImage = `url('${image.src}')`;
-  } else {
-    image.onload = function() {
-      setTimeout(() => {
-        body.style.backgroundImage = `url('${image.src}')`;
-      }, 300);
+  const t1 = performance.now();
+  image.onload = function() {
+    if (performance.now() - t1 < 200) {
+      body.style.backgroundImage = `url('${image.src}')`;
+      return;
     }
+    setTimeout(() => {
+      body.style.backgroundImage = `url('${image.src}')`;
+    }, 300);
   }
   const images = document.querySelectorAll('.event-list .plan img');
   images.forEach(img => {
