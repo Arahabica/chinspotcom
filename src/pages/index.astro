@@ -270,18 +270,17 @@ const image = "/images/chin.png";
     <p>© 2024 珍スポ研究室</p>
 </footer>
 <script>
-  function isImageCached(src) {
+  function isImageCached(src: string): boolean {
     console.log({ src });
     const entries = performance.getEntriesByType('resource');
     const entry = entries.find(entry => entry.name === src);
     console.log({ entries });
-  
-    if (!entry || typeof entry.transferSize === 'undefined') {
+    if (!entry || entry.entryType !== 'resource') {
       return false;
     }
-    // transferSizeが0の場合、キャッシュから読み込まれている
-    console.log({ size: entry.transferSize });
-    return entry.transferSize === 0;
+    // @ts-ignore
+    const transferSize: number = entry.transferSize as number;
+    return transferSize === 0;
   }
   const body = document.body;
   const image = new Image();
