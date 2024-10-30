@@ -18,3 +18,14 @@ const { Content } = await post.render();
 <BlogPost {...post.data}>
 	<Content />
 </BlogPost>
+
+<script>
+  // ブログ内のすべての画像に遅延読み込みを適用
+  document.addEventListener('DOMContentLoaded', () => {
+    const images = document.querySelectorAll('main .prose img');
+    images.forEach(img => {
+      img.setAttribute('loading', 'lazy');
+      img.setAttribute('decoding', 'async');
+    });
+  });
+</script>
