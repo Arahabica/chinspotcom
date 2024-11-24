@@ -24,8 +24,21 @@ const { Content } = await post.render();
   document.addEventListener('DOMContentLoaded', () => {
     const images = document.querySelectorAll('main .prose img');
     images.forEach(img => {
+      // 遅延読み込みと非同期デコードの設定
       img.setAttribute('loading', 'lazy');
       img.setAttribute('decoding', 'async');
+      
+      // クリックイベントの追加
+      img.addEventListener('click', () => {
+        const rect = img.getBoundingClientRect();
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const targetPosition = rect.top + scrollTop - 12; // 12pxのマージンを追加
+
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+        });
+      });
     });
   });
 </script>

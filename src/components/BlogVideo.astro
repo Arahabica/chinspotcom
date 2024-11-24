@@ -4,7 +4,7 @@ const { poster, url, width } = Astro.props;
 const videoWidth = width ? width + 'px' : '100%';
 ---
 <div class="blog-video-wrapper">
-  <div class="video-container" style={`width: ${videoWidth}`}>
+  <div class="video-container" style={{width: videoWidth, maxHeight: 'calc(100vh - 24px)'}}>
     <div class="progress-bar"></div>
     <video
       src={url}
@@ -26,17 +26,44 @@ const videoWidth = width ? width + 'px' : '100%';
     const playButtons = document.querySelectorAll('.play-button') as NodeListOf<HTMLDivElement>;
     const progressBars = document.querySelectorAll('.progress-bar') as NodeListOf<HTMLDivElement>;
 
+    const startVideo = (video: HTMLVideoElement, playButton: HTMLDivElement) => {
+      // 他の動画を停止
+      videos.forEach(otherVideo => {
+        if (otherVideo !== video && !otherVideo.paused) {
+          stopVideo(
+            otherVideo,
+            otherVideo.parentElement?.querySelector('.play-button') as HTMLDivElement
+          );
+        }
+      });
+
+      video.play();
+      playButton.style.opacity = '0';
+      const container = video.closest('.video-container');
+      if (container) {
+        const rect = container.getBoundingClientRect();
+        const scrollTop = window.pageYOffset + rect.top - 12;
+        window.scrollTo({
+          top: scrollTop,
+          behavior: 'smooth'
+        });
+      }
+    };
+
+    const stopVideo = (video: HTMLVideoElement, playButton: HTMLDivElement) => {
+      video.pause();
+      playButton.style.opacity = '1';
+    };
+
     videos.forEach((video, index) => {
       const playButton = playButtons[index];
       const progressBar = progressBars[index];
       
       video.addEventListener('click', () => {
         if (video.paused) {
-          video.play();
-          playButton.style.opacity = '0';
+          startVideo(video, playButton);
         } else {
-          video.pause();
-          playButton.style.opacity = '1';
+          stopVideo(video, playButton);
         }
       });
 
@@ -62,10 +89,15 @@ const videoWidth = width ? width + 'px' : '100%';
     justify-content: center;
   }
 
-  .video-container {
+  .blog-video-wrapper .video-container {
     position: relative;
     display: inline-block;
   }
+  .blog-video-wrapper video {
+    width: 100%;
+    height: 100%;
+  }
+
 
   .progress-bar {
     position: absolute;
@@ -95,6 +127,7 @@ const videoWidth = width ? width + 'px' : '100%';
     width: 64px;
     height: 64px;
     display: flex;
+    pointer-events: none;
     align-items: center;
     justify-content: center;
     transition: opacity 0.3s ease;

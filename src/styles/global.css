@@ -94,6 +94,10 @@ img {
 .prose p:has(img) + blockquote {
 	margin-top: -2.2em;
 }
+
+.prose img {
+	max-height: calc(100vh - 24px);
+}
 code {
 	padding: 2px 5px;
 	background-color: rgb(var(--gray-light));
