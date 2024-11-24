@@ -1,0 +1,107 @@
+---
+const { poster, url, width } = Astro.props;
+
+const videoWidth = width ? width + 'px' : '100%';
+---
+<div class="blog-video-wrapper">
+  <div class="video-container" style={`width: ${videoWidth}`}>
+    <div class="progress-bar"></div>
+    <video
+      src={url}
+      class="blog-video"
+      preload="none"
+      poster={poster}
+    ></video>
+    <div class="play-button">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="48" height="48">
+        <path d="M8 5v14l11-7z"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const videos = document.querySelectorAll('.blog-video');
+    const playButtons = document.querySelectorAll('.play-button');
+    const progressBars = document.querySelectorAll('.progress-bar');
+
+    videos.forEach((video, index) => {
+      const playButton = playButtons[index];
+      const progressBar = progressBars[index];
+      
+      video.addEventListener('click', () => {
+        if (video.paused) {
+          video.play();
+          playButton.style.opacity = '0';
+        } else {
+          video.pause();
+          playButton.style.opacity = '1';
+        }
+      });
+
+      video.addEventListener('play', () => {
+        playButton.style.opacity = '0';
+      });
+
+      video.addEventListener('pause', () => {
+        playButton.style.opacity = '1';
+      });
+
+      video.addEventListener('timeupdate', () => {
+        const progress = (video.currentTime / video.duration) * 100;
+        progressBar.style.width = `${progress}%`;
+      });
+    });
+  });
+</script>
+
+<style>
+  .blog-video-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .video-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 2;
+    transition: width 0.1s linear;
+  }
+
+  .blog-video {
+    display: block;
+    height: auto;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+  }
+
+  .play-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+</style>
