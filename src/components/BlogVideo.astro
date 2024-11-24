@@ -22,9 +22,9 @@ const videoWidth = width ? width + 'px' : '100%';
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    const videos = document.querySelectorAll('.blog-video');
-    const playButtons = document.querySelectorAll('.play-button');
-    const progressBars = document.querySelectorAll('.progress-bar');
+    const videos = document.querySelectorAll('.blog-video') as NodeListOf<HTMLVideoElement>;
+    const playButtons = document.querySelectorAll('.play-button') as NodeListOf<HTMLDivElement>;
+    const progressBars = document.querySelectorAll('.progress-bar') as NodeListOf<HTMLDivElement>;
 
     videos.forEach((video, index) => {
       const playButton = playButtons[index];
