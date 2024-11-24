@@ -2,7 +2,7 @@
 title: 'かがや会'
 description: '伝説的な狂気の居酒屋かがやにみんなで行こうという企画です。'
 date: '2024/09/20'
-heroImage: '/images/kagaya.webp'
+heroImage: '/images/kagaya/kagaya.webp'
 heroImageFromUrl: 'https://ghus400.gorp.jp'
 heroImageFromName: 'かがや - バラエティー居酒屋'
 startTime: '19:20 〜'

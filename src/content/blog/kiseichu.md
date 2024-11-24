@@ -2,7 +2,7 @@
 title: '東京直下72hTOURと目黒寄生虫館の旅'
 description: '首都直下地震の発生~避難までを体験できる東京直下72hTOURと目黒寄生虫館をめぐる企画です。'
 date: '2024/08/24'
-heroImage: '/images/hebikubo_800x.webp'
+heroImage: '/images/kiseichu/hebikubo_800x.webp'
 startTime: '12:30 〜'
 place: '有明駅改札'
 capacity: '4 / 9人'
@@ -18,7 +18,7 @@ label: ''
 
 防災体験学習ツアー「東京直下72hTOUR」を中心とした防災体験学習施設。
 
-![そなエリア01](/images/sonaarea01_o.jpg)
+![そなエリア01](/images/kiseichu/sonaarea01_800x.webp)
 
 東京直下72hTOURは当日現地で予約するというシステムだ。
 
@@ -26,34 +26,34 @@ label: ''
 
 15分ごとにツアーが開始されるシステム（← 公式HPに書いていなかった)で、すぐに案内が始まった。
 
-![そなエリア02](/images/sonaarea02_o.jpg)
+![そなエリア02](/images/kiseichu/sonaarea02_800x.webp)
 
 説明を受けた後、各チームごとにタブレットが配布される。
 
-![そなエリア03](/images/sonaarea03_o.jpg)
+![そなエリア03](/images/kiseichu/sonaarea03_800x.webp)
 
 このタブレットを使って、クイズに答えていく流れだ。
 
 
-![そなエリア04](/images/sonaarea04_o.jpg)
+![そなエリア04](/images/kiseichu/sonaarea04_800x.webp)
 
 エレベーターに乗って、外に出ると別世界。
 
-![そなエリア05](/images/sonaarea05_o.jpg)
+![そなエリア05](/images/kiseichu/sonaarea05_800x.webp)
 
 緊急地震速報も鳴り響いていて、なかなかに臨場感がある。
 
-![そなエリア06](/images/sonaarea06_o.jpg)
+![そなエリア06](/images/kiseichu/sonaarea06_800x.webp)
 
 こんな世界観の中でタブレットの指示を頼りに問題を解いていく。
 
 防災に関する問題なので、いわゆる謎解き的な問題ではない。
 
-![そなエリア07](/images/sonaarea07_o.jpg)
+![そなエリア07](/images/kiseichu/sonaarea07_800x.webp)
 
 大画面でクイズが出されるシチュエーションも、エフェクトが凝っていて行政っぽくない。
 
-![そなエリア08](/images/sonaarea08_o.jpg)
+![そなエリア08](/images/kiseichu/sonaarea08_800x.webp)
 
 クリア後、入り口でパシャリ。
 
@@ -64,20 +64,20 @@ label: ''
 品川区二葉にある蛇窪神社。手作り感のある龍や蛇の像が特徴的。
 
 
-![蛇窪神社02](/images/hebikubo02_o.jpg)
+![蛇窪神社02](/images/kiseichu/hebikubo02_800x.webp)
 
 昔は二葉、豊町、戸越、西大井の一部が蛇窪村と呼ばれていたらしく、地域活性化のため白蛇をおしている。  
 そのため、商店街の照明も白蛇になっている。
 
-![蛇窪神社04](/images/hebikubo04_o.jpg)
+![蛇窪神社04](/images/kiseichu/hebikubo04_800x.webp)
 
 鳥居をくぐると早速なぞのオブジェ。
 
-![蛇窪神社06](/images/hebikubo06_o.jpg)
+![蛇窪神社06](/images/kiseichu/hebikubo06_800x.webp)
 
 稲荷社の近くの狐さん。
 
-![蛇窪神社05](/images/hebikubo05_o.jpg)
+![蛇窪神社05](/images/kiseichu/hebikubo05_800x.webp)
 
 運玉を岩に投げ入れる運玉投げスポットもある。  
 簡単そうだが意外と弾かれてしまう。
@@ -85,15 +85,15 @@ label: ''
 他にも重軽石や銭洗いといった神社系アクティビティが目白押しだ。
 
 
-![蛇窪神社07](/images/hebikubo07_o.jpg)
+![蛇窪神社07](/images/kiseichu/hebikubo07_800x.webp)
 
 撫で白蛇。これはリアル寄り。撫でると良いことがあるらしい。
 
-![蛇窪神社08](/images/hebikubo08_o.jpg)
+![蛇窪神社08](/images/kiseichu/hebikubo08_800x.webp)
 
 本殿の奥にデカめの手作り龍。迫力がすごい。
 
-![蛇窪神社09](/images/hebikubo09_o.jpg)
+![蛇窪神社09](/images/kiseichu/hebikubo09_800x.webp)
 
 さらに進むと蛇がたくさんいた。
 
@@ -104,16 +104,16 @@ label: ''
 寄生虫を専門に扱う研究博物館。
 
 
-![目黒寄生虫館01](/images/kiseichu01_o.jpg)
+![目黒寄生虫館01](/images/kiseichu/kiseichu01_800x.webp)
 
 来館者が多く、ごった返していた。
 
 
-![目黒寄生虫館02](/images/kiseichu02_o.jpg)
+![目黒寄生虫館02](/images/kiseichu/kiseichu02_800x.webp)
 
 こんな感じの寄生虫の標本がずらりと並んでいる。
 
-![目黒寄生虫館03](/images/kiseichu03_o.jpg)
+![目黒寄生虫館03](/images/kiseichu/kiseichu03_800x.webp)
 
 昭和初期の論文原画。手書きでこの精密さは圧巻。
 
@@ -126,30 +126,30 @@ label: ''
 アフターは祐天寺Bobという居酒屋に行った。  
 入り口が分かりづらすぎる若者に人気の居酒屋だ。
 
-![祐天寺Bob01](/images/yutenji_bob01_o.jpg)
+![祐天寺Bob01](/images/kiseichu/yutenji_bob01_800x.webp)
 
 入り口はこちら。
 
 
-![祐天寺Bob02](/images/yutenji_bob02_o.jpg)
+![祐天寺Bob02](/images/kiseichu/yutenji_bob02_800x.webp)
 
 ドアに近づいてみるとちゃんと英語で祐天寺Bobと書いている。  
 看板はなく、シール1枚だけ。
 
-![祐天寺Bob04](/images/yutenji_bob04_o.jpg)
+![祐天寺Bob04](/images/kiseichu/yutenji_bob04_800x.webp)
 
 中は良さげな雰囲気。  
 お客さんは若い女性が多かった。
 
-![祐天寺Bob03](/images/yutenji_bob03_o.jpg)
+![祐天寺Bob03](/images/kiseichu/yutenji_bob03_800x.webp)
 
 乾杯！
 
-![祐天寺Bob05](/images/yutenji_bob05_o.jpg)
+![祐天寺Bob05](/images/kiseichu/yutenji_bob05_800x.webp)
 
 生ハムが巻かれている揚げ春巻き。めちゃくちゃ美味しい。
 
-![祐天寺Bob06](/images/yutenji_bob06_o.jpg)
+![祐天寺Bob06](/images/kiseichu/yutenji_bob06_800x.webp)
 
 うなぎとコーンの土鍋ごはん。これもめちゃくちゃ美味しい。  
 この2つだけじゃなく、どれを頼んでも全部美味しい。  
