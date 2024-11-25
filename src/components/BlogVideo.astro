@@ -4,7 +4,9 @@ const { poster, url, width } = Astro.props;
 const videoWidth = width ? width + 'px' : '100%';
 ---
 <div class="blog-video-wrapper">
-  <div class="video-container" style={{width: videoWidth, maxHeight: 'calc(100vh - 24px)'}}>
+  <div class="video-container"
+   style={{width: videoWidth, maxHeight: 'calc(100vh - 24px)'}}
+   >
     <div class="progress-bar"></div>
     <video
       src={url}
@@ -13,7 +15,11 @@ const videoWidth = width ? width + 'px' : '100%';
       poster={poster}
     ></video>
     <div class="play-button">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="48" height="48">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="white" width="48" height="48"
+      >
         <path d="M8 5v14l11-7z"/>
       </svg>
     </div>
@@ -22,40 +28,28 @@ const videoWidth = width ? width + 'px' : '100%';
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    const videos = document.querySelectorAll('.blog-video') as NodeListOf<HTMLVideoElement>;
-    const playButtons = document.querySelectorAll('.play-button') as NodeListOf<HTMLDivElement>;
-    const progressBars = document.querySelectorAll('.progress-bar') as NodeListOf<HTMLDivElement>;
+    const isMobile = window.innerWidth <= 720;
+    const videos = document
+      .querySelectorAll('.blog-video') as NodeListOf<HTMLVideoElement>;
+    const playButtons = document
+      .querySelectorAll('.play-button') as NodeListOf<HTMLDivElement>;
+    const progressBars = document
+      .querySelectorAll('.progress-bar') as NodeListOf<HTMLDivElement>;
 
-    const startVideo = (video: HTMLVideoElement, playButton: HTMLDivElement) => {
-      // 他の動画を停止
-      videos.forEach(otherVideo => {
-        if (otherVideo !== video && !otherVideo.paused) {
-          stopVideo(
-            otherVideo,
-            otherVideo.parentElement?.querySelector('.play-button') as HTMLDivElement
-          );
+    // Create Intersection Observer
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const video = entry.target as HTMLVideoElement;
+        if (!entry.isIntersecting && !video.paused) {
+          video.pause();
         }
       });
+    }, { threshold: 0 });
 
-      video.play();
-      playButton.style.opacity = '0';
-      const container = video.closest('.video-container');
-      if (container) {
-        const rect = container.getBoundingClientRect();
-        const scrollTop = window.pageYOffset + rect.top - 12;
-        window.scrollTo({
-          top: scrollTop,
-          behavior: 'smooth'
-        });
-      }
-    };
-
-    const stopVideo = (video: HTMLVideoElement, playButton: HTMLDivElement) => {
-      video.pause();
-      playButton.style.opacity = '1';
-    };
-
+    // Observe each video
     videos.forEach((video, index) => {
+      observer.observe(video);
+
       const playButton = playButtons[index];
       const progressBar = progressBars[index];
       
@@ -80,6 +74,37 @@ const videoWidth = width ? width + 'px' : '100%';
         progressBar.style.width = `${progress}%`;
       });
     });
+
+    const startVideo = (video: HTMLVideoElement, playButton: HTMLDivElement) => {
+      // 他の動画を停止
+      videos.forEach(otherVideo => {
+        if (otherVideo !== video && !otherVideo.paused && otherVideo.parentElement) {
+          stopVideo(
+            otherVideo,
+            otherVideo.parentElement
+              .querySelector('.play-button') as HTMLDivElement
+          );
+        }
+      });
+
+      video.play();
+      playButton.style.opacity = '0';
+      const container = video.closest('.video-container');
+      if (container) {
+        const rect = container.getBoundingClientRect();
+        const marginTop = isMobile ? 0 : 12;
+        const scrollTop = window.scrollY + rect.top - marginTop;
+        window.scrollTo({
+          top: scrollTop,
+          behavior: 'smooth'
+        });
+      }
+    };
+
+    const stopVideo = (video: HTMLVideoElement, playButton: HTMLDivElement) => {
+      video.pause();
+      playButton.style.opacity = '1';
+    };
   });
 </script>
 
