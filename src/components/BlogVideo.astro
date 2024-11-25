@@ -66,6 +66,13 @@ const videoWidth = width ? width + 'px' : '100%';
       });
     }, { threshold: 0 });
 
+    const updateMute = (muted: boolean) => {
+      videos.forEach(video => video.muted = muted);
+      const muteButtons = document
+        .querySelectorAll('.mute-button') as NodeListOf<HTMLDivElement>;
+      muteButtons.forEach(button => button.classList.toggle('muted', muted));
+    };
+
     // Observe each video
     videos.forEach((video, index) => {
       observer.observe(video);
@@ -73,14 +80,11 @@ const videoWidth = width ? width + 'px' : '100%';
       const progressBar = progressBars[index];
       const videoContainer = video.closest('.video-container') as HTMLDivElement;
       const muteButton = video.parentElement?.querySelector('.mute-button') as HTMLDivElement;
-      const volumeIcon = muteButton?.querySelector('.volume-icon') as SVGElement;
-      const muteIcon = muteButton?.querySelector('.mute-icon') as SVGElement;
 
       // ミュートボタンのクリックイベント
       muteButton?.addEventListener('click', () => {
-        video.muted = !video.muted;
-        volumeIcon.classList.toggle('hidden');
-        muteIcon.classList.toggle('hidden');
+        // video.muted = !video.muted;
+        updateMute(!video.muted);
       });
 
       video.addEventListener('click', () => {
@@ -204,12 +208,20 @@ const videoWidth = width ? width + 'px' : '100%';
     opacity: 1;
     display: flex;
   }
-
-  .video-container.playing .mute-button {
+  .volume-icon {
+    display: block;
+  }
+  .mute-button.muted .volume-icon {
     display: none;
   }
+  .mute-icon {
+    display: none;
+  }
+  .mute-button.muted .mute-icon {
+    display: block;
+  }
 
-  .hidden {
+  .video-container.playing .mute-button {
     display: none;
   }
 </style>
