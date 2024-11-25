@@ -53,8 +53,6 @@ const videoWidth = width ? width + 'px' : '100%';
     const isMobile = window.innerWidth <= 720;
     const videos = document
       .querySelectorAll('.blog-video') as NodeListOf<HTMLVideoElement>;
-    const playButtons = document
-      .querySelectorAll('.play-button') as NodeListOf<HTMLDivElement>;
     const progressBars = document
       .querySelectorAll('.progress-bar') as NodeListOf<HTMLDivElement>;
 
@@ -72,7 +70,6 @@ const videoWidth = width ? width + 'px' : '100%';
     videos.forEach((video, index) => {
       observer.observe(video);
 
-      const playButton = playButtons[index];
       const progressBar = progressBars[index];
       const videoContainer = video.closest('.video-container') as HTMLDivElement;
       const muteButton = video.parentElement?.querySelector('.mute-button') as HTMLDivElement;
@@ -103,7 +100,7 @@ const videoWidth = width ? width + 'px' : '100%';
       });
 
       video.addEventListener('timeupdate', () => {
-        const progress = (video.currentTime / video.duration) * 100;
+        const progress = Math.floor((video.currentTime / video.duration) * 1000) / 10;
         progressBar.style.width = `${progress}%`;
       });
     });
@@ -159,7 +156,7 @@ const videoWidth = width ? width + 'px' : '100%';
     height: 3px;
     background-color: rgba(255, 255, 255, 0.8);
     z-index: 2;
-    transition: width 0.1s linear;
+    transition: width 0.3s linear;
   }
 
   .blog-video {
@@ -197,15 +194,15 @@ const videoWidth = width ? width + 'px' : '100%';
 
   .mute-button {
     position: absolute;
-    bottom: 10px;
-    right: 10px;
+    bottom: 20px;
+    right: calc(50% - 24px);
     background: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
     padding: 8px;
     cursor: pointer;
     z-index: 2;
     opacity: 1;
-    display: flex;;
+    display: flex;
   }
 
   .video-container.playing .mute-button {
