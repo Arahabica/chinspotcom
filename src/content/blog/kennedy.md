@@ -2,7 +2,7 @@
 title: 'ケネディー電気に行く会'
 description: '茨城のケネディー電気と牛久大仏に行きます。'
 date: '2024/12/14'
-heroImage: '/images/kennedy/kennedy_800x.webp'
+heroImage: '/images/kennedy/kennedy_800x600.webp'
 heroImageFromUrl: 'https://www.japan-cafe.com/archives/19392596.html'
 heroImageFromName: 'ケネディ電気の自由な世界! : 純喫茶ヒッピー（HIPPIE HAPPY）～1980年から喫茶巡り'
 startTime: '09:30 〜'
@@ -19,7 +19,7 @@ label: '募集中'
 
 ### 牛久大仏
 
-![牛久大仏](/images/kennedy/ushiku_800x.webp)
+![牛久大仏](/images/kennedy/ushiku_800x602.webp)
 
 日本最大の仏像の牛久大仏。像の高さは100m。台座を含めると120mあります。奈良の大仏の6.6倍の高さになります。ちなみに世界ランキングも4位になります。
 
@@ -38,7 +38,7 @@ label: '募集中'
 
 ### ケネディー電気
 
-![ケネディー電気](/images/kennedy/kennedy_800x.webp)
+![ケネディー電気](/images/kennedy/kennedy_800x600.webp)
 > 画像: [ケネディ電気の自由な世界! : 純喫茶ヒッピー（HIPPIE HAPPY）～1980年から喫茶巡り](https://www.japan-cafe.com/archives/19392596.html) より引用
 
 茨城の田んぼの中に突如現れる異空間。謎のロケットが配置され、不気味なマネキンもあったりします。
@@ -87,5 +87,3 @@ https://tabelog.com/tokyo/A1312/A131201/13191175/
 ## お問い合わせ
 
 疑問点や質問がある人はLINE ID: arahabica か https://x.com/chinspotcom で直接ご連絡ください。
-
-

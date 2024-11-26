@@ -2,7 +2,7 @@
 title: 'あさくら画廊探訪'
 description: '足立区の公園とあさくら画廊を巡ります。'
 date: '2024/10/19'
-heroImage: '/images/asakura/asakura01_800x.webp'
+heroImage: '/images/asakura/asakura01_800x1063.webp'
 startTime: '13:00 〜'
 place: '日暮里・舎人ライナー舎人駅改札'
 capacity: '7 / 8人'
@@ -23,7 +23,7 @@ label: ''
 
 #### 舎人いきいき公園
 
-![舎人いきいき公園](/images/asakura/toneri_ikiki01_800x.webp)
+![舎人いきいき公園](/images/asakura/toneri_ikiki01_800x602.webp)
 
 **舎人いきいき公園** につきました！
 
@@ -36,21 +36,21 @@ label: ''
 
 しばらくすると塗り直されて立ち入り禁止も解除されるようです。
 
-![鬼の手](/images/asakura/oninote_800x.webp)
+![鬼の手](/images/asakura/oninote_800x1063.webp)
 
 
 よく見ると、**鬼の手**の血管が結構リアルでした。
 
 
-![桃](/images/asakura/momo_800x.webp)
+![桃](/images/asakura/momo_800x1063.webp)
 
-![桃太郎の壁画](/images/asakura/momotaro_800x.webp)
+![桃太郎の壁画](/images/asakura/momotaro_800x1063.webp)
 
 鬼以外にも桃太郎関連のモチーフがたくさんありました。
 
-![亀](/images/asakura/kame_800x.webp)
+![亀](/images/asakura/kame_800x602.webp)
 
-![カチカチ](/images/asakura/kachikachi_800x.webp)
+![カチカチ](/images/asakura/kachikachi_800x602.webp)
 
 
 他の童話のモチーフも。
@@ -62,7 +62,7 @@ label: ''
 
 次に伊興遺跡公園に行きました。
 
-![竪穴住居](/images/asakura/tateana_800x.webp)
+![竪穴住居](/images/asakura/tateana_800x602.webp)
 
 **竪穴住居**がお出迎え。
 
@@ -70,11 +70,11 @@ label: ''
 
 このあたりから、関係者を困惑させるほど出土品が大量に出てきたみたいです。
 
-![竪穴住居の中](/images/asakura/tateana_naka_800x.webp)
+![竪穴住居の中](/images/asakura/tateana_naka_800x602.webp)
 
 竪穴住居の中の様子も見れます。
 
-![伊興遺跡資料館](/images/asakura/ikou_siryo_800x.webp)
+![伊興遺跡資料館](/images/asakura/ikou_siryo_800x602.webp)
 
 資料館も併設されているので、歴史好きな人にはおすすめです。
 
@@ -85,22 +85,22 @@ label: ''
 次は白旗塚史跡公園。  
 こちらも前の伊興遺跡公園と同じ伊興遺跡・伊興古墳群の一部になります。
 
-![白旗塚史跡公園](/images/asakura/shirahataduka01_800x.webp)
+![白旗塚史跡公園](/images/asakura/shirahataduka01_800x602.webp)
 
-![埴輪 - 人](/images/asakura/haniwa_hito_800x.webp)
+![埴輪 - 人](/images/asakura/haniwa_hito_800x1063.webp)
 
-![埴輪 - 馬](/images/asakura/haniwa_uma_800x.webp)
+![埴輪 - 馬](/images/asakura/haniwa_uma_800x1063.webp)
 
 **埴輪**がいい感じに配置されていて、小川も流れていて趣があります。
 
 
-![古代文字 - 川](/images/asakura/kodai_kawa_800x.webp)
+![古代文字 - 川](/images/asakura/kodai_kawa_800x1063.webp)
 
-![古代文字 - 北](/images/asakura/kodai_kita_800x.webp)
+![古代文字 - 北](/images/asakura/kodai_kita_800x1063.webp)
 
 意味深な古代文字もありました。
 
-![白旗塚古墳](/images/asakura/shirahataduka_kofun_800x.webp)
+![白旗塚古墳](/images/asakura/shirahataduka_kofun_800x602.webp)
 
 反対側には白旗塚古墳があります。まだ、詳細な考古学的調査はされていないそうです。
 
@@ -110,7 +110,7 @@ label: ''
 いよいよメインの**あさくら画廊**です。
 
 
-![あさくら画廊外観](/images/asakura/asakura_gaikan_800x.webp)
+![あさくら画廊外観](/images/asakura/asakura_gaikan_800x1063.webp)
 
 住宅地を歩いていると忽然と怪しい民家が現れます！
 
@@ -118,19 +118,19 @@ label: ''
 
 辻さんは全然話が通じそうなイケメンのお兄さんです。服装もピンク要素なしです。
 
-![あさくら画廊中01](/images/asakura/asakura01_800x.webp)
+![あさくら画廊中01](/images/asakura/asakura01_800x1063.webp)
 
 ただ、中はご覧のように**めちゃくちゃピンク**です。
 
-![あさくら画廊中02](/images/asakura/asakura_03_800x.webp)
+![あさくら画廊中02](/images/asakura/asakura_03_800x1063.webp)
 
-![あさくら大師](/images/asakura/asakura_daishi_800x.webp)
+![あさくら大師](/images/asakura/asakura_daishi_800x602.webp)
 
-![あさくら画廊 - こしあん](/images/asakura/asakura_koshian_800x.webp)
+![あさくら画廊 - こしあん](/images/asakura/asakura_koshian_800x1063.webp)
 
-![あさくら画廊中03](/images/asakura/asakura_04_800x.webp)
+![あさくら画廊中03](/images/asakura/asakura_04_800x1063.webp)
 
-![あさくら画廊 - 死刑](/images/asakura/asakura_shikei_800x.webp)
+![あさくら画廊 - 死刑](/images/asakura/asakura_shikei_800x1063.webp)
 
 ピンクなだけじゃなくてかなり**ダーク**な要素も入っています。  
 そして外観からは想像できないほど盛りだくさん！
@@ -139,7 +139,7 @@ label: ''
 
 20分ほどあれば似顔絵も描いてくれるそうです。
 
-![吐血ベィビー](/images/asakura/toketsu_800x.webp)
+![吐血ベィビー](/images/asakura/toketsu_800x1063.webp)
 
 
 **吐血ベィビー**のお土産を買って、あさくら画廊を後にしました。
@@ -149,22 +149,22 @@ label: ''
 
 お次は北千住まで移動して、エスディコーヒー。
 
-![エスディコーヒー 北千住本店](/images/asakura/sdcoffee01_800x.webp)
+![エスディコーヒー 北千住本店](/images/asakura/sdcoffee01_800x1063.webp)
 
 独特な外観です。
 
 中は銭湯をモチーフにしたエリアと電気店をモチーフにしたエリアに分かれていました。
 
 
-![エスディコーヒー インベーダーゲーム](/images/asakura/invader_800x.webp)
+![エスディコーヒー インベーダーゲーム](/images/asakura/invader_800x1063.webp)
 
 インベーダーゲームが置いてたり、
 
-![エスディコーヒー iMac](/images/asakura/imac_800x.webp)
+![エスディコーヒー iMac](/images/asakura/imac_800x1063.webp)
 
 **初代iMac**が吊るされていたりしてます。
 
-![エスディコーヒー スイーツ](/images/asakura/sdcoffee_sweets_800x.webp)
+![エスディコーヒー スイーツ](/images/asakura/sdcoffee_sweets_800x602.webp)
 
 頼んだスイーツも美味しかったです。
 
@@ -172,7 +172,7 @@ label: ''
 
 活動予定としてはこれで終わりでしたが、参加者のおすすめで近くのスポットへ。
 
-![ドンレミー 北千住オフィス](/images/asakura/domremy_800x.webp)
+![ドンレミー 北千住オフィス](/images/asakura/domremy_800x1063.webp)
 
 訪れたのは**ドンレミー北千住オフィス** ！
 
@@ -194,31 +194,31 @@ label: ''
 
 ### 舎人いきいき公園
 
-![舎人いきいき公園](/images/asakura/toneri_ikiki01_800x.webp)
+![舎人いきいき公園](/images/asakura/toneri_ikiki01_800x602.webp)
 
 おとぎ話にちなんだ遊具がたくさんある公園。
 
 ### 伊興遺跡公園
 
-![伊興遺跡公園](/images/asakura/ikou_iseki_800x.webp)
+![伊興遺跡公園](/images/asakura/ikou_iseki_800x602.webp)
 
 復元された竪穴住居などがある公園。
 
 ### 白旗塚史跡公園
 
-![白旗塚史跡公園](/images/asakura/shirahataduka01_800x.webp)
+![白旗塚史跡公園](/images/asakura/shirahataduka01_800x602.webp)
 
 埴輪のオブジェや古代文字が書かれた岩がある不思議な公園。
 
 ### あさくら画廊
 
-![あさくら画廊](/images/asakura/asakura01_800x.webp)
+![あさくら画廊](/images/asakura/asakura01_800x1063.webp)
 
 住宅街に突如現れるピンク色の民家。中もピンク尽くしだ。
 
 ### エスディコーヒー 北千住本店
 
-![エスディコーヒー 北千住本店](/images/asakura/sdcoffee01_800x.webp)
+![エスディコーヒー 北千住本店](/images/asakura/sdcoffee01_800x1063.webp)
 
 銭湯&デンキ屋をコンセプトにした変わり種のカフェ。
 
