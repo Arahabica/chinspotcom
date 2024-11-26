@@ -1,13 +1,21 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import BaseHead from "../components/BaseHead.astro";
-// import Header from '../components/Header.astro';
-// import Footer from '../components/Footer.astro';
 
 type Props = CollectionEntry<"blog">["data"];
 
 const { title, description, heroImage, heroImageFromUrl, heroImageFromName } =
 	Astro.props;
+
+let heroImageWidth: number|undefined;
+let heroImageHeight: number|undefined;
+const matches = heroImage.match(/_(\d+)x(\d+)\.webp/);
+if (matches) {
+	const [, widthStr, heightStr] = matches;
+	if (!widthStr || !heightStr) return;
+	heroImageWidth = parseInt(widthStr);
+	heroImageHeight = parseInt(heightStr);
+}
 ---
 
 <html lang="en">
@@ -132,7 +140,15 @@ const { title, description, heroImage, heroImageFromUrl, heroImageFromName } =
 			<article>
 				<div class="prose">
 					<div class="hero-image">
-						{heroImage && <img src={heroImage} alt={title} />}
+						{
+							heroImage &&
+							<img
+							  src={heroImage}
+								alt={title}
+								width={heroImageWidth}
+								height={heroImageHeight}
+							/>
+						}
 					</div>
 					{
 						heroImageFromUrl && (

@@ -2,6 +2,14 @@
 const { poster, url, width } = Astro.props;
 
 const videoWidth = width ? width + 'px' : '100%';
+let posterWidth: number|undefined;
+let posterHeight: number|undefined;
+
+const [,widthStr, heightStr] = poster.match(/_(\d+)x(\d+)\.webp/);
+if (widthStr && heightStr) {
+  posterWidth = parseInt(widthStr);
+  posterHeight = parseInt(heightStr);
+}
 ---
 <div class="blog-video-wrapper">
   <div class="video-container"
@@ -13,6 +21,8 @@ const videoWidth = width ? width + 'px' : '100%';
       class="blog-video"
       preload="none"
       poster={poster}
+      width={posterWidth}
+      height={posterHeight}
     ></video>
     <div class="play-button">
       <svg
