@@ -81,9 +81,7 @@ table {
 img {
 	max-width: 100%;
 	height: auto;
-	/* 
-	border-radius: 8px;
-	*/
+	object-fit: contain;
 }
 .prose p {
 	margin: 1.6em 0;

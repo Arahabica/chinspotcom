@@ -30,6 +30,17 @@ const { Content } = await post.render();
         img.setAttribute('decoding', 'async');
       }
       
+      // _{width}x{height}.webp形式の画像に対してwidth, heightを設定
+      const src = img.getAttribute('src');
+      if (src) {
+        const match = src.match(/_(\d+)x(\d+)\.webp$/);
+        if (match) {
+          const [, width, height] = match;
+          img.setAttribute('width', width);
+          img.setAttribute('height', height);
+        }
+      }
+      
       // クリックイベントの追加
       img.addEventListener('click', () => {
         const rect = img.getBoundingClientRect();
