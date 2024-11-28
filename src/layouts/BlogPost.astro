@@ -18,7 +18,7 @@ if (matches) {
 }
 ---
 
-<html lang="en">
+<html lang="ja">
 	<head>
 		<BaseHead title={title} description={description} image={heroImage} />
 		<style>
@@ -84,13 +84,15 @@ if (matches) {
 					h6 {
 						margin: 0 16px;
 					}
-					p {
-						margin: 1.6em 16px;
-					}
-					p:has(img) {
-						margin: 2em 0;
-					}
 				}
+			}
+			@media (max-width: 720px) {
+				.prose p {
+					margin: 1.6em 16px;
+				}
+				/* .prose p:has(img) {
+					margin: 2em 0;
+				} */
 			}
 			.title {
 				margin-bottom: 1em;
