@@ -7,8 +7,8 @@ type Props = CollectionEntry<"blog">["data"];
 const { title, description, heroImage, heroImageFromUrl, heroImageFromName } =
 	Astro.props;
 
-let heroImageWidth: number|undefined;
-let heroImageHeight: number|undefined;
+let heroImageWidth: number | undefined;
+let heroImageHeight: number | undefined;
 const matches = heroImage.match(/_(\d+)x(\d+)\.webp/);
 if (matches) {
 	const [, widthStr, heightStr] = matches;
@@ -47,6 +47,28 @@ if (matches) {
 				margin: auto;
 				padding: 1em;
 				color: rgb(var(--gray-dark));
+			}
+			.prose p {
+				margin: 0;
+			}
+
+			.prose strong {
+				font-weight: bold;
+				font-size: 1.3em;
+			}
+
+			.prose p {
+				margin: 1.6em 0;
+			}
+			.prose p:has(img) {
+				margin: 2em 0;
+			}
+			.prose p:has(img) + blockquote {
+				margin-top: -2.2em;
+			}
+
+			.prose img {
+				max-height: calc(100vh - 24px);
 			}
 			@media (max-width: 720px) {
 				.prose {
@@ -141,13 +163,14 @@ if (matches) {
 				<div class="prose">
 					<div class="hero-image">
 						{
-							heroImage &&
-							<img
-							  src={heroImage}
-								alt={title}
-								width={heroImageWidth}
-								height={heroImageHeight}
-							/>
+							heroImage && (
+								<img
+									src={heroImage}
+									alt={title}
+									width={heroImageWidth}
+									height={heroImageHeight}
+								/>
+							)
 						}
 					</div>
 					{
