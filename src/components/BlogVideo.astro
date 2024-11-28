@@ -16,6 +16,7 @@ if (widthStr && heightStr) {
    style={{width: videoWidth, maxHeight: 'calc(100vh - 24px)'}}
    >
     <div class="progress-bar"></div>
+    <div class="loading-spinner"></div>
     <video
       src={url}
       class="blog-video"
@@ -105,6 +106,10 @@ if (widthStr && heightStr) {
         }
       });
 
+      video.addEventListener('loadeddata', () => {
+        videoContainer.classList.add('loaded');
+      });
+
       video.addEventListener('play', () => {
         videoContainer.classList.add('playing');
       });
@@ -126,9 +131,9 @@ if (widthStr && heightStr) {
           stopVideo(otherVideo);
         }
       });
-
       video.play();
       const container = video.closest('.video-container');
+      container?.classList.add('load-started');
       if (container) {
         const rect = container.getBoundingClientRect();
         const marginTop = isMobile ? 0 : 12;
@@ -161,7 +166,6 @@ if (widthStr && heightStr) {
     height: 100%;
   }
 
-
   .progress-bar {
     position: absolute;
     top: 0;
@@ -171,6 +175,31 @@ if (widthStr && heightStr) {
     background-color: rgba(255, 255, 255, 0.8);
     z-index: 2;
     transition: width 0.3s linear;
+  }
+  .loading-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #dadadf;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    z-index: 1;
+    display: none;
+  }
+  .load-started .loading-spinner {
+    display: block;
+  }
+  .load-started.loaded .loading-spinner {
+    display: none;
+  }
+
+  @keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
   }
 
   .blog-video {
