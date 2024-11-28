@@ -20,6 +20,8 @@ if (widthStr && heightStr) {
       src={url}
       class="blog-video"
       preload="none"
+      muted
+      playsinline
       poster={poster}
       width={posterWidth}
       height={posterHeight}
@@ -140,8 +142,12 @@ if (widthStr && heightStr) {
       }
     };
 
-    const stopVideo = (video: HTMLVideoElement) => {
-      video.pause();
+    const stopVideo = async (video: HTMLVideoElement) => {
+      try {
+        await video.pause();
+      } catch (e) {
+        console.error(e);
+      }
     };
   });
 </script>
