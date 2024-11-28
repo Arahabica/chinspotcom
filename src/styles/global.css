@@ -133,3 +133,61 @@ hr {
 	/* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
 }
+
+
+/**
+* prose
+*/
+
+.prose {
+	width: 720px;
+	max-width: calc(100% - 2em);
+	margin: auto;
+	padding: 1em;
+	color: rgb(var(--gray-dark));
+}
+.prose p {
+	margin: 0;
+}
+
+.prose strong {
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+.prose p {
+	margin: 1.6em 0;
+}
+.prose p:has(img) {
+	margin: 2em 0;
+}
+.prose p:has(img) + blockquote {
+	margin-top: -2.2em;
+}
+
+.prose img {
+	max-height: calc(100vh - 24px);
+}
+@media (max-width: 720px) {
+	body .prose {
+		width: 100%;
+		max-width: 100%;
+		padding: 0;
+		.title, h1, h2, h3, h4, h5, h6 {
+			margin: 0 16px;
+		}
+	}
+}
+@media (max-width: 720px) {
+	body .prose	.title, h1, h2, h3, h4, h5, h6 {
+			margin: 0 16px;
+	}
+}
+@media (max-width: 720px) {
+	.prose p {
+		margin: 1.6em 16px;
+	}
+	.prose p:has(img) {
+		margin: 2em 0;
+	}
+}
