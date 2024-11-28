@@ -77,12 +77,28 @@ if (widthStr && heightStr) {
       });
     }, { threshold: 0 });
 
+    const isMobileSafari = () => {
+      const ua = navigator.userAgent.toLowerCase();
+      return (
+        ua.indexOf('iphone') > -1 ||
+        ua.indexOf('ipad') > -1 ||
+        (ua.indexOf('macintosh') > -1 && 'ontouchend' in document)
+      ) && ua.indexOf('safari') > -1 && ua.indexOf('chrome') === -1;
+    };
+
     const updateMute = (muted: boolean) => {
       videos.forEach(video => video.muted = muted);
       const muteButtons = document
         .querySelectorAll('.mute-button') as NodeListOf<HTMLDivElement>;
       muteButtons.forEach(button => button.classList.toggle('muted', muted));
     };
+
+    if (isMobileSafari()) {
+      videos.forEach(video => {
+        const videoContainer = video.closest('.video-container') as HTMLDivElement;
+        videoContainer.classList.add('no-custom-controls');
+      });
+    }
 
     // Observe each video
     videos.forEach((video, index) => {
@@ -229,6 +245,10 @@ if (widthStr && heightStr) {
   .video-container.playing .play-button {
     opacity: 0;
   }
+  .no-custom-controls .play-button {
+    opacity: 0;
+    display: none;
+  }
 
 
   .play-button:hover {
@@ -246,6 +266,10 @@ if (widthStr && heightStr) {
     z-index: 2;
     opacity: 1;
     display: flex;
+  }
+  .no-custom-controls .mute-button {
+    opacity: 0;
+    display: none;
   }
   .volume-icon {
     display: block;
