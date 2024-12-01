@@ -8,12 +8,22 @@ const midnight = getMidnight(new Date());
 
 const plans = (await getCollection('blog'));
 const futurePlans = plans
-  .filter((plan) => japanDate(plan.data.date).getTime() >= midnight.getTime())
+  .filter(
+    (plan) =>(
+      japanDate(plan.data.date).getTime() >= midnight.getTime() && 
+      !plan.data.hiddenAtTop
+    )
+  )
   .sort(
 	  (a, b) => a.data.date.valueOf() - b.data.date.valueOf()
   );
 const pastPlans = plans
-  .filter((plan) => japanDate(plan.data.date).getTime() < midnight.getTime())
+  .filter(
+    (plan) => (
+      japanDate(plan.data.date).getTime() < midnight.getTime() &&
+      !plan.data.hiddenAtTop
+    )
+  )
   .sort(
 	  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
   );

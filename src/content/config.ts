@@ -17,6 +17,7 @@ const blog = defineCollection({
 		heroImageFromName: z.string().optional(),
 		label: z.string(),
 		dateTbd: z.boolean().optional(),
+		hiddenAtTop: z.boolean().optional(),
 	}),
 });
 
