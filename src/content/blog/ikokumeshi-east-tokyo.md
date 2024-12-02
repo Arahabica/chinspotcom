@@ -3,12 +3,11 @@ title: '東東京異国飯ツアー 【新小岩～平井～錦糸町】'
 description: '行ったことある国の知ってる飯 行ったことない国の知らない飯 食いに行きましょう！ '
 date: '2025/01/20'
 heroImage: '/images/ikokumeshi-east-tokyo/image-00_800x1066.webp'
-startTime: '-'
-place: '-'
+startTime: '16:50 〜'
+place: '新小岩駅'
 capacity: '0 / 12人'
-label: '募集中'
+label: '企画中'
 dateTbd: true
-hiddenAtTop: true
 ---
 行ったことある国の知ってる飯  
 行ったことない国の知らない飯  

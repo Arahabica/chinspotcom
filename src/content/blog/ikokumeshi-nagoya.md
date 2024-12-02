@@ -3,12 +3,11 @@ title: '名古屋異国飯ツアー '
 description: '名古屋、とくに郊外はTOYOTAのお陰で出稼ぎ労働外国人が多く異国情緒に親しめる'
 date: '2025/01/21'
 heroImage: '/images/ikokumeshi-nagoya/image-00_800x792.webp'
-startTime: '-'
-place: '-'
+startTime: '11:00 〜'
+place: '名古屋駅集合'
 capacity: '0 / 12人'
-label: '募集中'
+label: '企画中'
 dateTbd: true
-hiddenAtTop: true
 ---
 
 名古屋、とくに郊外はTOYOTAのお陰で出稼ぎ労働外国人が多く異国情緒に親しめる  
