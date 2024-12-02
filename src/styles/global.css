@@ -167,6 +167,7 @@ hr {
 
 .prose img {
 	max-height: calc(100vh - 24px);
+	vertical-align: bottom;
 }
 @media (max-width: 720px) {
 	body .prose {
