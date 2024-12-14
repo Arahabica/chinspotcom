@@ -8,7 +8,7 @@ heroImageFromName: 'ケネディ電気の自由な世界! : 純喫茶ヒッピ�
 startTime: '09:30 〜'
 place: '東京駅八重洲北口改札前'
 capacity: '6 / 12人'
-label: '催行中'
+label: ''
 ---
 
 ## 概要
