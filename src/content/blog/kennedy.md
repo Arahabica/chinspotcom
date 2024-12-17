@@ -2,9 +2,7 @@
 title: 'ケネディー電気に行く会'
 description: '茨城のケネディー電気と牛久大仏に行きます。'
 date: '2024/12/14'
-heroImage: '/images/kennedy/kennedy_800x600.webp'
-heroImageFromUrl: 'https://www.japan-cafe.com/archives/19392596.html'
-heroImageFromName: 'ケネディ電気の自由な世界! : 純喫茶ヒッピー（HIPPIE HAPPY）～1980年から喫茶巡り'
+heroImage: '/images/kennedy/kennedy03_800x602.webp'
 startTime: '09:30 〜'
 place: '東京駅八重洲北口改札前'
 capacity: '6 / 12人'
@@ -19,7 +17,7 @@ label: ''
 
 ### 牛久大仏
 
-![牛久大仏](/images/kennedy/ushiku_800x602.webp)
+![牛久大仏](/images/kennedy/ushiku01_800x1063.webp)
 
 日本最大の仏像の牛久大仏。像の高さは100m。台座を含めると120mあります。奈良の大仏の6.6倍の高さになります。ちなみに世界ランキングも4位になります。
 
@@ -29,8 +27,7 @@ label: ''
 
 ### 長竿亭(ランチ・仮)
 
-![長竿亭](/images/kennedy/nagasao_300x.webp)
-> 画像: [長竿亭 | 河内町公式ホームページ](https://www.town.ibaraki-kawachi.lg.jp/page/page000534.html) より引用
+![長竿亭](/images/kennedy/nagasao01_800x602.webp)
 
 大正時代に建てられた古民家。蕎麦と湯葉が自慢の蕎麦屋さんです。こちらでランチをいただく予定です。
 
@@ -38,8 +35,7 @@ label: ''
 
 ### ケネディー電気
 
-![ケネディー電気](/images/kennedy/kennedy_800x600.webp)
-> 画像: [ケネディ電気の自由な世界! : 純喫茶ヒッピー（HIPPIE HAPPY）～1980年から喫茶巡り](https://www.japan-cafe.com/archives/19392596.html) より引用
+![ケネディー電気](/images/kennedy/kennedy03_800x602.webp)
 
 茨城の田んぼの中に突如現れる異空間。謎のロケットが配置され、不気味なマネキンもあったりします。
 
