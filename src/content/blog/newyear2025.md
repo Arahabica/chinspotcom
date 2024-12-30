@@ -1,13 +1,13 @@
 ---
 title: '新年会 2025'
 description: '新年会をしましょう'
-date: '2025/01/23'
+date: '2025/01/17'
 heroImage: '/images/newyear2025/class64.webp'
 startTime: '20:00 〜'
 place: '個室居酒屋 6年4組 池袋東口分校前'
-capacity: '0 / 12人'
-label: '企画中'
-dateTbd: true
+capacity: '4 / 12人'
+label: '募集中'
+
 ---
 
 ## 概要
@@ -37,7 +37,7 @@ dateTbd: true
 
 ## 開催日
 
-未定
+2025年1月17日(金)
 
 ## 集合
 
