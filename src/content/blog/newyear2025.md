@@ -6,7 +6,7 @@ heroImage: '/images/newyear2025/class64.webp'
 startTime: '20:00 〜'
 place: '個室居酒屋 6年4組 池袋東口分校前'
 capacity: '6 / 12人'
-label: '募集中'
+label: ''
 
 ---
 
