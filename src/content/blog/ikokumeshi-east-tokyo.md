@@ -5,7 +5,7 @@ date: '2025/02/20'
 heroImage: '/images/ikokumeshi-east-tokyo/image-00_800x1066.webp'
 startTime: '16:50 〜'
 place: '新小岩駅'
-capacity: '0 / 12人'
+capacity: '5 / 12人'
 label: '企画中'
 dateTbd: true
 ---
@@ -124,13 +124,6 @@ NAS売ってます
 
 錦糸町に移動  
 錦糸町は異国飯がたくさん  
-ルーマニア
-
-![image-20_800x1066.webp](/images/ikokumeshi-east-tokyo/image-20_800x1066.webp)  
-
-エジプト
-
-![image-21_800x1066.webp](/images/ikokumeshi-east-tokyo/image-21_800x1066.webp)
 
 フィリピン  
 中身はお楽しみに
