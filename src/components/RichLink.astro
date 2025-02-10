@@ -1,0 +1,59 @@
+---
+const {url, imageUrl, title, subtitle, description} = Astro.props;
+---
+<a class="rich-link" href={url}>
+  <div class="rich-link-header">
+    <img src={imageUrl} alt={title} class="rich-link-image" width={80} height={80} />
+    <div class="rich-link-content">
+      <div class="rich-link-title">{title}</div>
+      <div class="rich-link-subtitle">{subtitle}</div>
+    </div>
+  </div>
+  <div class="rich-link-description">{description}</div>
+  <div class="rich-link-footer">{url}</div>
+</a>
+
+<style>
+.rich-link {
+  display: block;
+  padding: 12px;
+  border: 1px solid rgba(92, 147, 187, .2);
+  border-radius: 12px;
+  text-decoration: none;
+  color: #222222;
+  margin: 0 12px;
+}
+.rich-link:hover {
+  background-color: rgba(239, 246, 251, .7);
+}
+.rich-link-header {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.rich-link img {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+}
+.rich-link-title {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.rich-link-subtitle {
+  font-size: 0.7em;
+  color: #444444;
+}
+
+.rich-link-description {
+  margin-top: 12px;
+  font-size: 0.9em;
+  color: #666666;
+}
+.rich-link-footer {
+  margin-top: 8px;
+  color: #bababe;
+  font-size: 0.7em;
+}
+</style>

@@ -8,6 +8,7 @@ place: '名古屋駅集合'
 capacity: '0 / 12人'
 label: '企画中'
 dateTbd: true
+hiddenAtTop: true
 ---
 
 ## 概要
