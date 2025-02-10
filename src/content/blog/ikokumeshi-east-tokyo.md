@@ -5,7 +5,7 @@ date: '2025/03/01'
 heroImage: '/images/ikokumeshi-east-tokyo/image-00_800x1066.webp'
 startTime: '16:00 〜'
 place: 'JR新小岩駅改札'
-capacity: '5 / 12人'
+capacity: '5 / 8人'
 label: '企画中'
 ---
 
