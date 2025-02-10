@@ -21,7 +21,11 @@ const {url, imageUrl, title, subtitle, description} = Astro.props;
   border-radius: 12px;
   text-decoration: none;
   color: #222222;
-  margin: 0 12px;
+}
+@media (max-width: 480px) {
+  .rich-link {
+    margin: 0 12px;
+  }
 }
 .rich-link:hover {
   background-color: rgba(239, 246, 251, .7);
