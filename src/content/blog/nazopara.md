@@ -7,7 +7,7 @@ heroImageFromUrl: 'https://www.cross-ja45.com/entry/2021/08/31/215056'
 heroImageFromName: '淡路島　ナゾのパラダイス - カブログ〈Cub-log〉'
 startTime: '09:15 〜'
 place: '鉄人28号モニュメント'
-capacity: '5 / 15人'
+capacity: '6 / 15人'
 label: '募集中'
 ---
 
