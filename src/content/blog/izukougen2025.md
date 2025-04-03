@@ -7,7 +7,6 @@ startTime: '10:00 〜'
 place: 'JR熱海駅 改札'
 capacity: '5 / 11人'
 label: '募集中'
-dateTbd: true
 ---
 
 ## 概要
