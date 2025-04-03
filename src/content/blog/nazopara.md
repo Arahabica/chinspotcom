@@ -8,7 +8,7 @@ heroImageFromName: '淡路島　ナゾのパラダイス - カブログ〈Cub-lo
 startTime: '09:15 〜'
 place: '鉄人28号モニュメント'
 capacity: '6 / 15人'
-label: '募集中'
+label: ''
 ---
 
 ## 概要
