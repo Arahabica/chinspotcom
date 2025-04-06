@@ -6,7 +6,7 @@ heroImage: '/images/nazopara/nazopara01_800x602.webp'
 startTime: '09:15 〜'
 place: '鉄人28号モニュメント'
 capacity: '6 / 15人'
-label: '楽しかった！'
+label: ''
 ---
 
 ## 概要

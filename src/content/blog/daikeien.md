@@ -8,7 +8,7 @@ heroImageFromName: 'ＤＡＩＫＥＩＥＮ'
 startTime: '10:00 〜'
 place: '東京駅・西船橋駅'
 capacity: '8 / 9人'
-label: '楽しかった！'
+label: ''
 ---
 
 ## 概要

@@ -6,7 +6,7 @@ heroImage: '/images/kiseichu/hebikubo_800x602.webp'
 startTime: '12:30 〜'
 place: '有明駅改札'
 capacity: '4 / 9人'
-label: '楽しかった！'
+label: ''
 ---
 ## 活動報告
 

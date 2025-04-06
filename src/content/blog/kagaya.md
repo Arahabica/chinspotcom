@@ -8,7 +8,7 @@ heroImageFromName: 'かがや - バラエティー居酒屋'
 startTime: '19:20 〜'
 place: '池上線旗の台東口'
 capacity: '12 / 12人'
-label: '楽しかった！'
+label: ''
 ---
 
 ## 概要

@@ -6,7 +6,7 @@ heroImage: '/images/asakura/asakura01_800x1063.webp'
 startTime: '13:00 〜'
 place: '日暮里・舎人ライナー舎人駅改札'
 capacity: '7 / 8人'
-label: '楽しかった！'
+label: ''
 ---
 
 ## 活動報告
