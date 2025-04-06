@@ -2,13 +2,11 @@
 title: 'ナゾのパラダイスへ行く会'
 description: '特別公開される淡路島のナゾのパラダイスへ行こうという企画です。ONOKOROにも行きます。'
 date: '2025/03/30'
-heroImage: '/images/nazopara/nazopara_800x599.webp'
-heroImageFromUrl: 'https://www.cross-ja45.com/entry/2021/08/31/215056'
-heroImageFromName: '淡路島　ナゾのパラダイス - カブログ〈Cub-log〉'
+heroImage: '/images/nazopara/nazopara01_800x602.webp'
 startTime: '09:15 〜'
 place: '鉄人28号モニュメント'
 capacity: '6 / 15人'
-label: ''
+label: '楽しかった！'
 ---
 
 ## 概要
@@ -20,9 +18,7 @@ label: ''
 
 ### 鉄人28号モニュメント 
 
-![鉄人28号モニュメント](/images/nazopara/tetsujin28_800x391.webp)
-
-> [KOBE鉄人28号モニュメント ｜ モニュメントファクトリーホッカイ](https://monumentfactory-hokkai.com/creator/tetsujin/) より引用
+![鉄人28号モニュメント](/images/nazopara/tetsujin28_800x1063.webp)
 
 鉄人２８号の巨大なモニュメント。  
 鉄人２８号50周年を記念して作られた。  
@@ -30,18 +26,15 @@ label: ''
 
 ### 淡路ワールドパーク ONOKORO
 
-![淡路ワールドパーク ONOKORO](/images/nazopara/onokoro_800x600.webp)
+![淡路ワールドパーク ONOKORO](/images/nazopara/onokoro01_800x602.webp)
 
-> [淡路ワールドパークONOKORO | 淡路島観光ガイド - 淡路島の観光や旅行、宿泊施設、温泉、グルメ、イベント情報がいっぱい！](https://www.awajishima-kanko.jp/manual/detail.html?bid=428) より引用
 
 万里の長城などの世界の有名な建物が25分の1サイズで集まっているスポット。  
 また、子ども向け遊園地エリアもある。
 
 ### ナゾのパラダイス
 
-![ナゾのパラダイス](/images/nazopara/nazopara_800x599.webp)
-
-> [淡路島　ナゾのパラダイス - カブログ〈Cub-log〉](https://www.cross-ja45.com/entry/2021/08/31/215056) より引用
+![ナゾのパラダイス](/images/nazopara/nazopara01_800x602.webp)
 
 ナゾのパラダイスは淡路島の有名な珍スポットです。 
 建物の外にはナゾのオブジェがあって、館内は秘宝館になっています。   
