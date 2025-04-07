@@ -9,7 +9,7 @@ const monthText = String(date.getMonth() + 1).padStart(2, '0');
 const dayText = String(date.getDate()).padStart(2, '0');
 const weekText = ['日', '月', '火', '水', '木', '金', '土'][date.getDay()];
 ---
-<a class="plan" href={`/events/${key}`}>
+<a class="plan" href={`/events/${key}/`}>
   <div class="image-wrapper">
       <img src={heroImage} alt={title}>
   </div>
