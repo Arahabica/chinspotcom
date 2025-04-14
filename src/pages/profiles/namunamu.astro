@@ -97,18 +97,23 @@ import BaseHead from "../../components/BaseHead.astro";
       .profile-images img {
         object-fit: cover;
       }
+      img.profile-2 {
+        width: 120px;
+        height: 200px;
+      }
+      img.profile-3 {
+        width: 120px;
+        height: 120px;
+      }
 
       @media (max-width: 720px) {
-        .profile-images.small-images {
-          flex-direction: column;
-        }
-        .profile-images img.large-2 {
+        img.profile-2 {
           width: 160px;
           height: 200px;
         }
-        .profile-images.small-images img {
-          width: 160px;
-          height: 160px;
+        img.profile-3 {
+          width: 120px;
+          height: 120px;
         }
       }
     </style>
@@ -124,33 +129,24 @@ import BaseHead from "../../components/BaseHead.astro";
               class="large"
               src="/images/namunamu_720x720.webp"
               alt="なむなむ"
-              width={280}
-              height={280}
+              width={320}
+              height={320}
             />
-            <div>
+            <div style="display: flex;flex-direction: column;">
               <img
-                class="large large-2"
+                class="profile-2"
                 src="/images/namunamu5_360.webp"
                 alt="なむなむ"
-                width={180}
-                height={180}
+                width={160}
+                height={160}
               />
-              <div class="profile-images small-images">
-                <img
-                  class="small"
-                  src="/images/namunamu2_240.webp"
-                  alt="なむなむ"
-                  width={90}
-                  height={90}
-                />
-                <img
-                  class="small"
-                  src="/images/namunamu3_240.webp"
-                  alt="なむなむ"
-                  width={90}
-                  height={90}
-                />
-              </div>
+              <img
+                class="profile-3"
+                src="/images/namunamu2_240.webp"
+                alt="なむなむ"
+                width={160}
+                height={160}
+              />
             </div>
           </div>
           <div class="title">
