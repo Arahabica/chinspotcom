@@ -102,9 +102,13 @@ import BaseHead from "../../components/BaseHead.astro";
         .profile-images.small-images {
           flex-direction: column;
         }
+        .profile-images img.large-2 {
+          width: 160px;
+          height: 200px;
+        }
         .profile-images.small-images img {
-          width: 120px;
-          height: 120px;
+          width: 160px;
+          height: 160px;
         }
       }
     </style>
@@ -125,7 +129,7 @@ import BaseHead from "../../components/BaseHead.astro";
             />
             <div>
               <img
-                class="large"
+                class="large large-2"
                 src="/images/namunamu5_360.webp"
                 alt="なむなむ"
                 width={180}
