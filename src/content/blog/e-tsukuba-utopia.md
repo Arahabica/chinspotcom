@@ -7,7 +7,7 @@ heroImageFromUrl: 'https://ameblo.jp/ton8go/entry-12443617990.html'
 heroImageFromName: '思いがけなく東筑波ユートピア | ton8goのブログ'
 startTime: '09:30 〜'
 place: '東京駅'
-capacity: '0 / 11人'
+capacity: '6 / 11人'
 label: '企画中'
 dateTbd: true
 ---
