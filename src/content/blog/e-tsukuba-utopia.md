@@ -1,15 +1,14 @@
 ---
 title: '東筑波ユートピアへ行く会'
 description: '筑波山周辺の珍スポットを巡ります。東筑波ユートピア・ダチョウ王国・ガマランドを巡ります。'
-date: '2025/06/10'
+date: '2025/06/21'
 heroImage: '/images/e-tsukuba-utopia/utopia_800x599.webp'
 heroImageFromUrl: 'https://ameblo.jp/ton8go/entry-12443617990.html'
 heroImageFromName: '思いがけなく東筑波ユートピア | ton8goのブログ'
 startTime: '09:30 〜'
 place: '東京駅'
 capacity: '6 / 11人'
-label: '企画中'
-dateTbd: true
+label: '募集中'
 ---
 
 ## 概要
@@ -52,11 +51,11 @@ BBQでダチョウ肉やダチョウ卵を食べる予定です。
 
 ## 開催日
 
-未定
+2025年6月21日(土)
 
 ## 応募締め切り
 
-未定
+2025年6月19日(木) 23:59
 
 ## 集合
 
