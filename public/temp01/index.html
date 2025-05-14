@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinspot</title>
+    <style>
+        @font-face {
+          font-family: 'GamaMoji';
+          src: url('./BT_Kgama.ttf') format('truetype');
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4a86e8;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            font-family: 'GamaMoji';
+            font-size: 2em;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chinspot</h1>
+        <p>シンプルなウェブサイトのデモ</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">ホーム</a></li>
+            <li><a href="#">プロフィール</a></li>
+            <li><a href="#">ブログ</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section class="card">
+            <h2>ようこそ</h2>
+            <p>これはシンプルなHTMLのデモページです。Chinspotのウェブサイト開発のために作成されました。</p>
+        </section>
+        
+        <section class="card">
+            <h2>最新情報</h2>
+            <p>ここには最新の情報やニュースを掲載することができます。</p>
+            <ul>
+                <li>新しいブログ記事を公開しました</li>
+                <li>ウェブサイトのデザインをリニューアル</li>
+                <li>新しい機能を追加しました</li>
+            </ul>
+        </section>
+        
+        <section class="card">
+            <h2>お知らせ</h2>
+            <p>重要なお知らせやイベント情報をここに掲載します。</p>
+            <p>次回のイベントは2025年6月15日に開催予定です。ぜひご参加ください！</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Chinspot. All rights reserved.</p>
+    </footer>
+</body>
+</html>
