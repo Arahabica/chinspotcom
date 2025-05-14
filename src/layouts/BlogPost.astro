@@ -104,9 +104,6 @@ if (matches) {
 			}
 		</style>
 	</head>
-	<script src="https://unpkg.com/vconsole@latest/dist/vconsole.min.js"></script>
-	<script>new window.VConsole();
-	</script>
 	<body>
 		<a href="/" class="to-top">珍スポ研究室</a>
 		<main>
@@ -143,7 +140,12 @@ if (matches) {
 			<a href="/">珍スポ研究室 トップに戻る</a>
 		</div>
 		<footer>
-			<p>© 2024 珍スポ研究室</p>
+			<p>© 2024 珍スポ研究室ss</p>
 		</footer>
+		<script src="https://unpkg.com/vconsole@latest/dist/vconsole.min.js"></script>
+		<script>
+			// VConsole will be exported to `window.VConsole` by default.
+			var vConsole = new window.VConsole();
+		</script>
 	</body>
 </html>
