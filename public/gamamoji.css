@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'GamaMoji';
+  src: url('/fonts/BT_Kgama.ttf') format('truetype');
+}
+.gamamoji h3,
+.gamamoji strong {
+  font-family: 'GamaMoji';
+  font-size: 2em;
+}
