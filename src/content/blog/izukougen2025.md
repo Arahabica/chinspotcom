@@ -5,8 +5,8 @@ date: '2025/05/17'
 heroImage: '/images/izukougen2025/maboroshi_800x602.webp'
 startTime: '10:00 〜'
 place: 'JR熱海駅 改札'
-capacity: '10 / 11人'
-label: '募集締め切り'
+capacity: '8 / 11人'
+label: ''
 ---
 
 ## 概要
