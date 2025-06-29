@@ -10,6 +10,7 @@ place: '池袋駅いけふくろう像 '
 capacity: '1 / 8人'
 label: '企画中'
 dateTbd: true
+hiddenAtTop: true
 ---
 ## 募集状況
 
