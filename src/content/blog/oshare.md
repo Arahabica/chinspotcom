@@ -1,0 +1,79 @@
+---
+title: 'おしゃれSHOPへ行く会'
+description: 'おしゃれSHOPに行ってみよう'
+date: '2025/07/20'
+heroImage: '/images/oshare/oshareshop_800x267.webp'
+heroImageFromUrl: 'https://x.com/oshareshoptoyo'
+heroImageFromName: 'おしゃれSHOP🍎豊川（@oshareshoptoyo）さん / X'
+startTime: '18:00 〜'
+place: '堀切菖蒲園駅改札'
+capacity: '1 / 5人'
+label: ''
+dateTbd: true
+---
+
+## 訪問スポット
+
+### おしゃれSHOP
+
+![おしゃれSHOP](/images/oshare/oshareshop_800x267.webp)
+
+> [おしゃれSHOP🍎豊川（@oshareshoptoyo）さん / X](https://x.com/oshareshoptoyo) より引用
+
+日本No.1フェミニストを自称する豊川さんの経営する雑貨店。
+
+世界観が凄くて、思想が強い「世の中をめちゃくちゃにしたい雑貨店」らしい。
+
+また、お客さんはカラオケ必須1曲必須。
+
+「居酒屋しまい」という居酒屋の奥にあります。
+
+### 居酒屋しまい
+
+![居酒屋しまい](/images/oshare/shimai.webp)
+
+50年以上前からやっている老舗居酒屋。
+
+奥におしゃれSHOPがある。
+
+
+
+## 開催日
+
+未定
+
+## 応募締め切り
+
+未定
+
+## 集合
+
+18:00 堀切菖蒲園駅改札 集合
+
+## 旅程
+18:00 堀切菖蒲園駅改札 集合  
+18:10 おしゃれSHOP 着  
+19:00 おしゃれSHOP 発  
+19:00 居酒屋しまい 着  
+21:00 居酒屋しまい 発
+
+
+## 催行条件
+
+最小催行人数: 4人  
+最大催行人数: 5人
+
+## 旅行代金
+
+実費
+
+## 参加方法
+
+オープンチャット「[オフ会専用板（珍スポ探検隊）](https://line.me/ti/g2/PZfs6bwr4EejequqSQYxW5Xc3zFotxYJqI3S0w)」に参加されている方は随時、連絡をいたします。
+
+
+Xアカウント( https://x.com/chinspotcom )のDMにて、参加されることをお知らせください。
+
+## お問い合わせ
+
+疑問点や質問がある人はLINE ID: arahabica か https://x.com/chinspotcom で直接ご連絡ください。
