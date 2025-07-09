@@ -7,7 +7,7 @@ heroImageFromUrl: 'https://x.com/oshareshoptoyo'
 heroImageFromName: 'おしゃれSHOP🍎豊川（@oshareshoptoyo）さん / X'
 startTime: '18:00 〜'
 place: '堀切菖蒲園駅改札'
-capacity: '1 / 5人'
+capacity: '4 / 5人'
 label: ''
 dateTbd: true
 ---
