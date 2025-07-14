@@ -1,16 +1,24 @@
 ---
 title: 'おしゃれSHOPへ行く会'
 description: 'おしゃれSHOPに行ってみよう'
-date: '2025/07/20'
+date: '2025/08/02'
 heroImage: '/images/oshare/oshareshop_800x267.webp'
 heroImageFromUrl: 'https://x.com/oshareshoptoyo'
 heroImageFromName: 'おしゃれSHOP🍎豊川（@oshareshoptoyo）さん / X'
-startTime: '18:00 〜'
+startTime: '17:00 〜'
 place: '堀切菖蒲園駅改札'
 capacity: '4 / 5人'
-label: ''
-dateTbd: true
+label: '募集中'
 ---
+
+## 募集状況
+
+募集中
+
+参加人数: 4名
+
+最少催行人数: 4人  
+最多催行人数: 5人
 
 ## 訪問スポット
 
@@ -37,25 +45,24 @@ dateTbd: true
 奥におしゃれSHOPがある。
 
 
-
 ## 開催日
 
-未定
+2025年8月2日(土)
 
 ## 応募締め切り
 
-未定
+2025年7月31日(木) 23:59
 
 ## 集合
 
-18:00 堀切菖蒲園駅改札 集合
+17:00 堀切菖蒲園駅改札 集合
 
 ## 旅程
-18:00 堀切菖蒲園駅改札 集合  
-18:10 おしゃれSHOP 着  
-19:00 おしゃれSHOP 発  
-19:00 居酒屋しまい 着  
-21:00 居酒屋しまい 発
+17:00 堀切菖蒲園駅改札 集合  
+17:10 おしゃれSHOP 着  
+18:00 おしゃれSHOP 発  
+18:00 居酒屋しまい 着  
+20:00 居酒屋しまい 発
 
 
 ## 催行条件
