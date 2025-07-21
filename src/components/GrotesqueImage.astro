@@ -1,0 +1,113 @@
+---
+const {alt, url} = Astro.props;
+---
+<div class="grotesque-image-wrapper grotesque-filter">
+  <img src={url} alt={alt} class="grotesque-image" width={800} />
+  <div class="grotesque-warning">
+    <div class="grotesque-warning-content">
+      <div class="grotesque-warning-title">グロ注意</div>
+      <div class="grotesque-warning-desc">自己責任で表示してください</div>
+      <button class="i-am-grotesque">表示</button>
+    </div>
+  </div>
+</div>
+<script>
+const buttons = document.querySelectorAll('.grotesque-image-wrapper button');
+if (buttons) {
+  buttons.forEach(button => {
+    button.addEventListener('click', function(this: HTMLElement) {
+      const wrapper = this.closest('.grotesque-image-wrapper')
+      if (!wrapper) return;
+      wrapper.classList.toggle('grotesque-filter');
+    });
+  });
+}
+</script>
+
+<style>
+  .grotesque-image-wrapper {
+    margin: 48px 0;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .grotesque-image {
+    width: 100%;
+    height: auto;
+    transition: all 0.5s;
+  }
+  .grotesque-filter .grotesque-image {
+    filter: blur(28px);
+  }
+  .grotesque-filter:hover .grotesque-image {
+    filter: blur(24px);
+  }
+  .grotesque-filter .grotesque-warning {
+    display: flex;
+  }
+  .grotesque-warning-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .grotesque-warning {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    /* background-color: rgba(168, 73, 9, 0.4); */
+    background-color: rgba(120, 22, 13, 0.4);
+    transition: all 0.5s;
+  }
+  .grotesque-warning:hover {
+    background-color: rgba(120, 22, 13, 0.2);
+  }
+  .grotesque-warning-content {
+    font-size: 1.2em;
+    color: #ffffff;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 24px;
+  }
+
+  @media (max-width: 390px) {
+    .grotesque-warning-content {
+      padding: 8px;
+    }
+  }
+
+  .grotesque-warning-title {
+    font-size: 3em;
+  }
+  .grotesque-warning-desc {
+    font-size: 1.2em;
+  }
+  .grotesque-warning button {
+    margin-top: 24px;
+    padding: 12px 24px;
+    border: 2px solid #ffffff;
+    background: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 6px;
+  }
+  @media (max-width: 480px) {
+    .grotesque-warning-title {
+      font-size: 2em;
+    }
+    .grotesque-warning-desc {
+      font-size: .8em;
+    }
+    button {
+      font-size: 1em;
+    }
+  }
+</style>
