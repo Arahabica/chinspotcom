@@ -8,17 +8,8 @@ heroImageFromName: 'おしゃれSHOP🍎豊川（@oshareshoptoyo）さん / X'
 startTime: '17:00 〜'
 place: '堀切菖蒲園駅改札'
 capacity: '5 / 5人'
-label: '満員御礼'
+label: ''
 ---
-
-## 募集状況
-
-満員御礼につき募集停止中
-
-参加人数: 5名
-
-最少催行人数: 4人  
-最多催行人数: 5人
 
 ## 訪問スポット
 
