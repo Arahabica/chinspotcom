@@ -6,7 +6,7 @@ heroImage: '/images/maboroshido/maboroshido_560x418.webp'
 startTime: '11:20 〜'
 place: '東京駅八重洲北口改札前'
 capacity: '1 / 8人'
-label: ''
+label: '企画中'
 dateTbd: true
 ---
 
