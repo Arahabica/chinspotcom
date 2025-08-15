@@ -1,15 +1,21 @@
 ---
 title: 'まぼろし堂に行く会'
 description: 'まぼろし堂に行く会'
-date: '2025/09/27'
+date: '2025/09/21'
 heroImage: '/images/maboroshido/maboroshido_560x418.webp'
 startTime: '11:20 〜'
 place: '東京駅八重洲北口改札前'
-capacity: '1 / 8人'
-label: '企画中'
-dateTbd: true
+capacity: '7 / 11人'
+label: '募集中'
 ---
 
+## 募集状況
+
+募集中
+現在人数: 7人
+
+最少催行人数: 4人  
+最大催行人数: 11人  
 
 ## 概要
 
