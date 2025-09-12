@@ -5,14 +5,14 @@ date: '2025/09/21'
 heroImage: '/images/maboroshido/maboroshido_560x418.webp'
 startTime: '11:20 〜'
 place: '東京駅八重洲北口改札前'
-capacity: '7 / 11人'
+capacity: '6 / 11人'
 label: '募集中'
 ---
 
 ## 募集状況
 
 募集中
-現在人数: 7人
+現在人数:  6人
 
 最少催行人数: 4人  
 最大催行人数: 11人  
