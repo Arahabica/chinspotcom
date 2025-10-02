@@ -1,16 +1,24 @@
 ---
 title: '宇都宮動物園に行く会'
 description: '宇都宮動物園に行く会'
-date: '2025/10/05'
+date: '2025/11/08'
 heroImage: '/images/utsunomiya-zoo/utsunomiya-zoo.webp'
 heroImageFromUrl: 'https://blog.goo.ne.jp/kogemaru-rx-7/e/d77038db84984622cd4a3bd2799d234f'
 heroImageFromName: 'そうだ、宇都宮動物園に行こう！ （その１） ホワイトタイガーだっ！ - うさぎ学園　多趣味部'
 startTime: '11:20 〜'
 place: '東京駅八重洲北口改札前'
-capacity: '1 / 11人'
+capacity: '5 / 11人'
 label: '企画中'
 dateTbd: true
 ---
+
+## 募集状況
+
+募集中
+現在人数:  5人
+
+最少催行人数: 4人  
+最大催行人数: 11人  
 
 ## 概要
 
@@ -52,11 +60,11 @@ dateTbd: true
 
 ## 開催日
 
-未定
+2025/11/08(土)
 
 ## 応募締め切り
 
-未定
+2025/11/06(木) 23:59
 
 ## 集合
 
@@ -75,7 +83,7 @@ dateTbd: true
 ## 催行条件
 
 最小催行人数: 4人  
-最大催行人数: 8人 (運転要員が確保できれば変更するかもしれません)
+最大催行人数: 11人
 
 ## 旅行代金
 
