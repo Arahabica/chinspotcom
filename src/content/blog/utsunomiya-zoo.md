@@ -8,8 +8,7 @@ heroImageFromName: 'そうだ、宇都宮動物園に行こう！ （その１�
 startTime: '11:20 〜'
 place: '東京駅八重洲北口改札前'
 capacity: '5 / 11人'
-label: '企画中'
-dateTbd: true
+label: '募集中'
 ---
 
 ## 募集状況
