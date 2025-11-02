@@ -2,9 +2,7 @@
 title: 'おしゃれSHOPへ行く会'
 description: 'おしゃれSHOPに行ってみよう'
 date: '2025/08/02'
-heroImage: '/images/oshare/oshareshop_800x267.webp'
-heroImageFromUrl: 'https://x.com/oshareshoptoyo'
-heroImageFromName: 'おしゃれSHOP🍎豊川（@oshareshoptoyo）さん / X'
+heroImage: '/images/oshare/oshare_800x600.webp'
 startTime: '17:00 〜'
 place: '堀切菖蒲園駅改札'
 capacity: '5 / 5人'
@@ -15,9 +13,7 @@ label: ''
 
 ### おしゃれSHOP
 
-![おしゃれSHOP](/images/oshare/oshareshop_800x267.webp)
-
-> [おしゃれSHOP🍎豊川（@oshareshoptoyo）さん / X](https://x.com/oshareshoptoyo) より引用
+![おしゃれSHOP](/images/oshare/oshare_800x600.webp)
 
 日本No.1フェミニストを自称する豊川さんの経営する雑貨店。
 

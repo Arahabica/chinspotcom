@@ -6,7 +6,7 @@ heroImage: '/images/maboroshido/maboroshido_560x418.webp'
 startTime: '11:20 〜'
 place: '東京駅八重洲北口改札前'
 capacity: '6 / 11人'
-label: '募集中'
+label: ''
 ---
 
 ## 概要
