@@ -5,11 +5,15 @@ interface Props {
     plan: Plan;
 }
 const { key, title, heroImage, place, date, startTime, capacity, label, dateTbd } = Astro.props.plan;
+const thisYear = new Date().getFullYear();
+const year = date.getFullYear();
+// const yearText = thisYear === year ? '' : `${year}`;
 const monthText = String(date.getMonth() + 1).padStart(2, '0');
+const thisYearClass= thisYear === year ? ' this-year' : '';
 const dayText = String(date.getDate()).padStart(2, '0');
 const weekText = ['日', '月', '火', '水', '木', '金', '土'][date.getDay()];
 ---
-<a class="plan" href={`/events/${key}/`}>
+<a class={`plan${thisYearClass}`} href={`/events/${key}/`}>
   <div class="image-wrapper">
       <img src={heroImage} alt={title}>
   </div>
@@ -19,7 +23,8 @@ const weekText = ['日', '月', '火', '水', '木', '金', '土'][date.getDay()
     }
     {
         !dateTbd &&
-        <div class="date">  
+        <div class="date">
+          <div class="date-year">{year}</div>
           <div class="date-month">{monthText}</div>
           <div class="date-deli">/</div>
           <div class="date-day">{dayText}</div>
@@ -71,15 +76,32 @@ const weekText = ['日', '月', '火', '水', '木', '金', '土'][date.getDay()
             display: flex;
             flex-direction: column;
             align-items: center;
-            font-size: 1.2rem;
+            font-size: 1rem;
             flex-shrink: 0;
+            box-sizing: border-box;
+            padding: 0 6px;
+        }
+        .plan.this-year .date {
+            font-size: 1.2rem;
+            padding: 0;
+        }
+        .plan.this-year .date-year {
+            display: none;
+        }
+        .plan .date-year {
+            font-size: .8rem;
+            color: #777777;
         }
         .plan .date-month {
             align-self: start;
         }
         .plan .date-deli {
-            font-size: 2rem;
+            font-size: 1rem;
             transform: rotate(20deg);
+            margin: -1rem 1rem -1rem 1rem;
+        }
+        .plan.this-year .date-deli {
+            font-size: 2rem;
             margin: -1.5rem 0 -1.5rem 0;
         }
         .plan .date-day {
