@@ -118,11 +118,15 @@ hiddenAtTop: true
 
 ### わらやき屋(品川駅前)
 
+![わらやき屋](/images/queenscake/warayaki_800x532.webp)
+
+> [品川駅前・わらやき屋ー土佐料理 - 山陽立地・つれづれDEEP](https://stsuno1122.hatenablog.com/entry/20120412/1334210067) より引用
+
+
 アフターで品川駅近くのわらやき屋に行こうと考えています。
 
 土佐料理の美味しいお店です。
 
-> [品川駅前・わらやき屋ー土佐料理 - 山陽立地・つれづれDEEP](https://stsuno1122.hatenablog.com/entry/20120412/1334210067) より引用
 ## 開催日
 
 未定
