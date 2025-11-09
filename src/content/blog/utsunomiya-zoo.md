@@ -2,22 +2,12 @@
 title: '宇都宮動物園に行く会'
 description: '宇都宮動物園に行く会'
 date: '2025/11/08'
-heroImage: '/images/utsunomiya-zoo/utsunomiya-zoo.webp'
-heroImageFromUrl: 'https://blog.goo.ne.jp/kogemaru-rx-7/e/d77038db84984622cd4a3bd2799d234f'
-heroImageFromName: 'そうだ、宇都宮動物園に行こう！ （その１） ホワイトタイガーだっ！ - うさぎ学園　多趣味部'
+heroImage: '/images/utsunomiya-zoo/kirin_800x347.webp'
 startTime: '11:20 〜'
 place: '東京駅八重洲北口改札前'
 capacity: '5 / 11人'
-label: '募集中'
+label: ''
 ---
-
-## 募集状況
-
-募集中
-現在人数:  5人
-
-最少催行人数: 4人  
-最大催行人数: 11人  
 
 ## 概要
 
@@ -29,9 +19,7 @@ label: '募集中'
 
 ### 宇都宮動物園
 
-![宇都宮動物園](/images/utsunomiya-zoo/utsunomiya-zoo.webp)
-
-> [そうだ、宇都宮動物園に行こう！ （その１） ホワイトタイガーだっ！ - うさぎ学園　多趣味部](https://blog.goo.ne.jp/kogemaru-rx-7/e/d77038db84984622cd4a3bd2799d234f) より引用
+![宇都宮動物園](/images/utsunomiya-zoo/utsunomiyazoo_800x600.webp)
 
 昭和レトロな動物園＆遊園地。
 
@@ -39,7 +27,7 @@ label: '募集中'
 
 ### 岩下の新生姜ミュージアム
 
-![岩下の新生姜ミュージアム](/images/utsunomiya-zoo/iwashita.jpg)
+![岩下の新生姜ミュージアム](/images/utsunomiya-zoo/iwashita_800x1067.webp)
 
 岩下の新生姜に関する展示がたくさんあります。
 
@@ -47,9 +35,8 @@ label: '募集中'
 
 ### イキイキ・ギョーザ
 
-![イキイキ・ギョーザ](/images/utsunomiya-zoo/ikiiki.webp)
+![イキイキ・ギョーザ](/images/utsunomiya-zoo/ikiiki_800x600.webp)
 
-> [個人的には宇都宮一の餃子店『イキイキ・ギョーザ』 - 明るく正しく強いブログ ](https://blog.goo.ne.jp/shiyoudayuuji/e/667b141270cbed31f982bed970b81ca3) より引用
 
 600種類の餃子が食べられる餃子店。
 
