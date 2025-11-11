@@ -1,27 +1,23 @@
 ---
 title: 'クインズケーキでお茶する会'
 description: 'クインズケーキでお茶する会'
-date: '2026/01/08'
+date: '2026/01/31'
 heroImage: '/images/queenscake/queenscake01_640x480.webp'
 heroImageFromUrl: 'https://papicocafe.blog.jp/21825737.html'
 heroImageFromName: '【千葉】　秘境のおいしいケーキ屋さん　クインズケーキ : ＢＱ ～B-spot Explorer～ Powered by ライブドアブログ'
 startTime: '9:30 〜'
 place: '東京駅八重洲北口改札前'
-capacity: ''
-label: '企画中'
-dateTbd: true
+capacity: '7 / 11人'
+label: '募集中'
 ---
 
 ## 募集状況
 
-企画中
-<!--
 募集中
-現在人数:  5人
+現在人数:  7人
 
-最少催行人数: 4人 
+最少催行人数: 4人  
 最大催行人数: 11人
--->
 
 ## 概要
 
