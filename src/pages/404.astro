@@ -1,0 +1,85 @@
+---
+const title = "404 - ページが見つかりません";
+const description = "お探しのページは見つかりませんでした。";
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        body {
+            font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+            background: url("/images/chinspot-back-small.webp") no-repeat center center fixed;
+            background-size: cover;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+        .error-container {
+            text-align: center;
+            padding: 24px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 12px;
+            max-width: 500px;
+            margin: 0 12px;
+        }
+        h1 {
+            color: lime;
+            font-size: 4rem;
+            margin: 0 0 12px 0;
+        }
+        h2 {
+            color: #ffffff;
+            font-size: 1.5rem;
+            margin: 0 0 24px 0;
+        }
+        p {
+            color: #ffffff;
+            font-size: 1rem;
+            margin-bottom: 32px;
+        }
+        a {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(90deg, #10CAC3 0%, #07C662 100%);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+        a:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="error-container">
+        <h1>404</h1>
+        <h2>ページが見つかりません</h2>
+        <p>お探しのページは存在しないか、移動した可能性があります。</p>
+        <a href="/">トップページに戻る</a>
+    </div>
+</body>
+</html>
