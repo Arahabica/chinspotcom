@@ -1,28 +1,27 @@
 ---
-title: '第2回珍スポ休憩室 @大阪'
-description: '第2回珍スポ休憩室'
-date: '2026/02/02'
-heroImage: '/images/break/toyonaka_a_800x593.webp'
-heroImageFromUrl: 'https://www.instagram.com/azuma.shoten/'
-heroImageFromName: '立ち飲み あ。(@azuma.shoten) • Instagram'
+title: '第2回珍スポ休憩室 - 新年会'
+description: '第1回珍スポ休憩室'
+date: '2026/01/10'
+heroImage: '/images/break/ningyocho02_800x1067.webp'
 startTime: '19:00 〜'
-place: '立ち飲み あ'
+place: '人形町オープンボックス'
 capacity: ''
 label: ''
 dateTbd: true
-hiddenAtTop: true
+hiddenAtTop: false
 ---
 
 ## 概要
 
-珍スポに興味ある人でゆるく集まろうという企画です。
+珍スポに興味ある人でゆるく集まろうという企画です。第二回。
 
-📍 会場：豊中駅前 立ち飲み あ 2階  
-🕐 時間：19:00〜23:00  
-💰 参加費：3,000円（飲み放題）  
+📍 会場：人形町オープンボックス バースペース  
+🕐 時間：19:00〜23:00（出入り自由)  
+💰 参加費：1,500円（ワンドリンク付き）  
 
 #### 持ち物について
 
+* 追加の飲み物・食べ物は各自でご持参ください
 * 差し入れ大歓迎です！みんなでシェアしましょう
 
 初めての方も大歓迎です！  
@@ -36,13 +35,13 @@ hiddenAtTop: true
 
 ## 開催場所
 
-立ち飲み あ。
+人形町オープンボックス
 
-〒560-0021 大阪府豊中市本町1-10-9 小林ビル [Google Map](https://maps.app.goo.gl/upkzoDbhMQwuVHcp6)
+〒103-0012 東京都中央区日本橋堀留町１丁目７−１１ [Google Map](https://maps.app.goo.gl/uJpgvagk74486uXj8)
 
 ## 開催時間
 
-19:00〜23:00
+17:30〜23:30
 
 
 ## 参加方法
@@ -53,9 +52,11 @@ hiddenAtTop: true
 
 ## 参加費用
 
-参加費用は3,000円で、飲み放題になります。
+参加費用は1,000円で、ワンドリンクがついて来ます。
 
-差し入れ大歓迎です。
+それ以上のものはないので、追加でお酒、食べ物がいる方は持って来てください。
+
+差し入れも大歓迎です。
 
 ## お問い合わせ
 
