@@ -2,27 +2,29 @@
 title: '第3回珍スポ休憩室 @大阪'
 description: '第3回珍スポ休憩室'
 date: '2026/02/02'
-heroImage: '/images/break/toyonaka_a_800x593.webp'
-heroImageFromUrl: 'https://www.instagram.com/azuma.shoten/'
-heroImageFromName: '立ち飲み あ。(@azuma.shoten) • Instagram'
+heroImage: '/images/break/hana.webp'
+heroImageFromUrl: 'https://www.instabase.jp/space/9772034007'
+heroImageFromName: '【レンタルルームHANA（華）】を予約 (¥1,100~)｜インスタベース'
 startTime: '19:00 〜'
-place: '立ち飲み あ'
+place: '喫茶 華 (大阪市西成区のレンタルスペース)  '
 capacity: ''
-label: ''
+label: '企画中'
 dateTbd: true
-hiddenAtTop: true
+hiddenAtTop: false
 ---
 
 ## 概要
 
-珍スポに興味ある人でゆるく集まろうという企画です。
+珍スポに興味ある人でゆるく集まろうという企画です。  
+初の大阪企画！
 
-📍 会場：豊中駅前 立ち飲み あ 2階  
+📍 会場：喫茶 華 (大阪市西成区のレンタルスペース)   
 🕐 時間：19:00〜23:00  
-💰 参加費：3,000円（飲み放題）  
+💰 参加費：1,500円 
 
 #### 持ち物について
 
+* 追加の飲み物・食べ物は各自でご持参ください
 * 差し入れ大歓迎です！みんなでシェアしましょう
 
 初めての方も大歓迎です！  
@@ -36,9 +38,9 @@ hiddenAtTop: true
 
 ## 開催場所
 
-立ち飲み あ。
+喫茶 華
 
-〒560-0021 大阪府豊中市本町1-10-9 小林ビル [Google Map](https://maps.app.goo.gl/upkzoDbhMQwuVHcp6)
+〒557-0014 大阪府大阪市西成区天下茶屋1-14-4 [Google Map](https://maps.app.goo.gl/fce5VSK9rV6MdKqM6)
 
 ## 開催時間
 
@@ -53,9 +55,11 @@ hiddenAtTop: true
 
 ## 参加費用
 
-参加費用は3,000円で、飲み放題になります。
+参加費用は1,500円で、ワンドリンクがついて来ます。
 
-差し入れ大歓迎です。
+それ以上のものはないので、追加でお酒、食べ物がいる方は持って来てください。
+
+差し入れも大歓迎です。
 
 ## お問い合わせ
 
