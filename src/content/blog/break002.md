@@ -1,13 +1,13 @@
 ---
 title: '第2回珍スポ休憩室 - 新年会'
 description: '第1回珍スポ休憩室'
-date: '2026/01/10'
+date: '2026/01/09'
 heroImage: '/images/break/ningyocho02_800x1067.webp'
 startTime: '19:00 〜'
 place: '人形町オープンボックス'
 capacity: ''
-label: ''
-dateTbd: true
+label: '参加自由'
+dateTbd: false
 hiddenAtTop: false
 ---
 
@@ -30,7 +30,7 @@ hiddenAtTop: false
 
 ## 開催日
 
-未定
+2026/01/09
 
 
 ## 開催場所
@@ -52,7 +52,7 @@ hiddenAtTop: false
 
 ## 参加費用
 
-参加費用は1,000円で、ワンドリンクがついて来ます。
+参加費用は1,500円で、ワンドリンクがついて来ます。
 
 それ以上のものはないので、追加でお酒、食べ物がいる方は持って来てください。
 
