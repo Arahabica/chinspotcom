@@ -38,7 +38,7 @@ hiddenAtTop: false
 
 ## 開催場所
 
-喫茶 華
+喫茶 華 (レンタルスペース)
 
 〒557-0014 大阪府大阪市西成区天下茶屋1-14-4 [Google Map](https://maps.app.goo.gl/fce5VSK9rV6MdKqM6)
 
