@@ -8,7 +8,7 @@ heroImageFromName: '【レンタルルームHANA（華）】を予約 (¥1,100~)
 startTime: '19:00 〜'
 place: '喫茶 華 (大阪市西成区のレンタルスペース)  '
 capacity: ''
-label: '自由参加'
+label: '参加自由'
 dateTbd: false
 hiddenAtTop: false
 ---
