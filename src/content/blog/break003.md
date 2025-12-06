@@ -1,15 +1,15 @@
 ---
 title: '第3回珍スポ休憩室 @大阪'
 description: '第3回珍スポ休憩室'
-date: '2026/02/02'
+date: '2026/01/23'
 heroImage: '/images/break/hana.webp'
 heroImageFromUrl: 'https://www.instabase.jp/space/9772034007'
 heroImageFromName: '【レンタルルームHANA（華）】を予約 (¥1,100~)｜インスタベース'
 startTime: '19:00 〜'
 place: '喫茶 華 (大阪市西成区のレンタルスペース)  '
 capacity: ''
-label: '企画中'
-dateTbd: true
+label: '自由参加'
+dateTbd: false
 hiddenAtTop: false
 ---
 
@@ -33,7 +33,7 @@ hiddenAtTop: false
 
 ## 開催日
 
-未定
+2026/01/23(金)
 
 
 ## 開催場所
