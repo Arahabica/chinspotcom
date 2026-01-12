@@ -8,7 +8,7 @@ heroImageFromName: '山あいに突如現れた巨大な「薬師如来像」高
 startTime: '10:45'
 place: 'JR上田駅改札'
 capacity: ''
-label: '企画中'
+label: '募集中'
 ---
 
 <!-- ## 募集状況
