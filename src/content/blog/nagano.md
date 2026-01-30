@@ -1,7 +1,7 @@
 ---
 title: '西沢邸薬師如来坐像にお参りする会 in 長野'
 description: '西沢邸薬師如来坐像にお参りする会'
-date: '2026/03/14'
+date: '2026/03/28'
 heroImage: '/images/nagano/yakushi_nbs_800x451.webp'
 heroImageFromUrl: 'https://www.nbs-tv.co.jp/news/articles/?cid=18855'
 heroImageFromName: '山あいに突如現れた巨大な「薬師如来像」高さ5.4ｍ・幅4m　75歳が独学で腕磨き4年かけて完成「彫ってるうちにはまっちゃって」 | 長野県内のニュース | NBS 長野放送'
@@ -11,14 +11,14 @@ capacity: ''
 label: '募集中'
 ---
 
-<!-- ## 募集状況
+## 募集状況
 
 募集中
 
-現在人数:  7人
+現在人数:  5人
 
 最少催行人数: 4人  
-最大催行人数: 11人 -->
+最大催行人数: 8人
 
 ## 概要
 
