@@ -7,18 +7,9 @@ heroImageFromUrl: 'https://papicocafe.blog.jp/21825737.html'
 heroImageFromName: '【千葉】　秘境のおいしいケーキ屋さん　クインズケーキ : ＢＱ ～B-spot Explorer～ Powered by ライブドアブログ'
 startTime: '9:30 〜'
 place: '東京駅八重洲北口改札前'
-capacity: '7 / 11人'
-label: '募集終了'
+capacity: '8 / 11人'
+label: ''
 ---
-
-## 募集状況
-
-募集終了
-
-現在人数:  8人
-
-最少催行人数: 4人  
-最大催行人数: 11人
 
 ## 概要
 
