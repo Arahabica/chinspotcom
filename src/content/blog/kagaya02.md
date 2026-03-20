@@ -9,7 +9,7 @@ startTime: '19:20 〜'
 place: '池上線旗の台東口'
 capacity: '1 / 12人'
 label: ''
-dataTbd: true
+dateTbd: true
 ---
 
 ## 概要
