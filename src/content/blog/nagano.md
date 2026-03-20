@@ -104,6 +104,25 @@ label: '募集中'
 [Google Map](https://maps.app.goo.gl/3cfRupXjBqJXqw3x6)
 
 
+
+
+### 猫とジェラート GILL
+
+
+
+![猫とジェラート GILL](/images/nagano/gill_800x533.webp)
+> [【GiLL by le.chat.des.bois / 北杜市】猫雑貨と可愛いネコちゃんジェラートのお店2025年4月5日オープン | PORTA PRESS | PORTA](https://www.porta-y.jp/180033)
+
+ツリーハウスのある「えのき笑店街」の一角にあるジェラート屋さん。
+
+猫の雑貨とジェラートが可愛い。
+
+
+[Google Map](https://maps.app.goo.gl/K3vnTx3tznZoXZ8Z7)
+
+
+
+
 ## 開催日
 
 3/28(土)・3/29(日)
@@ -139,7 +158,9 @@ label: '募集中'
 12:35 丸井伊藤商店着  
 13:20 丸井伊藤商店発  
 14:40 天然水晶堂着  
-16:10 天然水晶堂発  
+15:50 天然水晶堂発  
+16:10 猫とジェラート GILL着  
+16:30 猫とジェラート GILL発  
 17:30 甲府駅  
 18:30 談合坂SA着  
 19:10 談合坂SA発  
