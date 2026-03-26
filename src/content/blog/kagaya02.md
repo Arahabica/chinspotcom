@@ -1,13 +1,13 @@
 ---
 title: 'かがや会'
 description: '伝説的な狂気の居酒屋かがやにみんなで行こうという企画です。'
-date: '2026/05/20'
+date: '2026/05/16'
 heroImage: '/images/kagaya/kagaya.webp'
 heroImageFromUrl: 'https://ghus400.gorp.jp'
 heroImageFromName: 'かがや - バラエティー居酒屋'
 startTime: '19:20 〜'
 place: '池上線旗の台東口'
-capacity: '1 / 12人'
+capacity: '8 / 12人'
 label: ''
 dateTbd: true
 ---
@@ -18,7 +18,7 @@ dateTbd: true
 
 ## 開催日
 
-未定
+2026年5月16日(土)
 
 ## 集合
 
