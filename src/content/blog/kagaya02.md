@@ -7,16 +7,15 @@ heroImageFromUrl: 'https://ghus400.gorp.jp'
 heroImageFromName: 'かがや - バラエティー居酒屋'
 startTime: '19:20 〜'
 place: '池上線旗の台東口'
-capacity: '8 / 12人'
+capacity: '9 / 12人'
 label: ''
-dateTbd: true
 ---
 
 ## 募集状況
 
 募集中
 
-現在人数:  8人
+現在人数:  9人
 
 最少催行人数: 4人  
 最大催行人数: 12人
