@@ -1,4 +1,4 @@
-<a class="profile-card" href="/profiles/namunamu/" target="_blank">
+<a class="profile-card rough-frame" href="/profiles/namunamu/" target="_blank" data-rough-bleed="8">
   <div class="profile-card-header">
     <img src="/images/namunamu_240x240.webp" alt="なむなむ" class="profile-card-image" width={80} height={80} />
     <div class="profile-card-content">
@@ -18,13 +18,20 @@
   display: block;
   padding: 12px;
   max-width: 670px;
-  border: 1px solid rgba(92, 147, 187, .2);
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  position: relative;
   text-decoration: none;
   color: #222222;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.92);
 }
 .profile-card:hover {
-  background-color: #eeeeee;
+  background-color: #ffffff;
+}
+.profile-card > * {
+  position: relative;
+  z-index: 1;
 }
 .profile-card-header {
   display: flex;
@@ -34,7 +41,8 @@
 .profile-card img {
   width: 80px;
   height: 80px;
-  border-radius: 40px;
+  filter: grayscale(1) contrast(1.18);
+  mix-blend-mode: multiply;
 }
 .profile-card-title {
   font-weight: bold;
