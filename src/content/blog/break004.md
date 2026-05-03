@@ -6,7 +6,7 @@ heroImage: '/images/break/ningyocho02_800x1067.webp'
 startTime: '19:00 〜'
 place: '人形町オープンボックス'
 capacity: ''
-label: '参加自由'
+label: ''
 dateTbd: false
 hiddenAtTop: false
 ---

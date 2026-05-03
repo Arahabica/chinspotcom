@@ -41,60 +41,83 @@ const image = "/images/chin.png";
       description={description}
       image={image}
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap"
+    />
     <style>
-        html, body {
+        html,
+        body {
             margin: 0;
             padding: 0;
+        }
+        html {
+            background: #f6f6f2;
         }
         p {
             margin: 0;
         }
         body {
-            font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
-            background: url("/images/chinspot-back-small.webp") no-repeat center center fixed;
-            animation: float 0.14s ease-in-out .4s 3;
-            background-size: auto calc(100% + 20px);
-            background-color: black;
+            color: #111111;
+            font-family: "Yuji Syuku", "Hiragino Mincho ProN", "Yu Mincho", serif;
+            line-height: 1.7;
+            /* background:
+              radial-gradient(circle at 14px 18px, rgba(0, 0, 0, 0.055) 0 1px, transparent 1.5px) 0 0 / 42px 46px,
+              linear-gradient(90deg, transparent 0 49%, rgba(0, 0, 0, 0.035) 50%, transparent 51%) 0 0 / 100% 22px,
+              #f6f6f2; */
+            overflow-x: hidden;
         }
-        @media (min-width: 480px) {
-             body {
-                background-size: cover;
-                animation: none;
-            }
-        }
-        .overlay {
+        body::before {
+            content: "";
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
+            inset: 0;
             z-index: -1;
+            pointer-events: none;
         }
         section {
           padding: 12px;
           margin: 0 auto;
         }
         #greeting {
-            padding: 12px;
+            padding: 28px 12px 12px;
             margin: 0 auto;
         }
         #greeting h1 {
-            color: lime;
-            font-size: 2.4rem;
-            text-align: center;
+            display: inline-block;
+            color: #111111;
+            font-family: "Yuji Syuku", "Hiragino Mincho ProN", "Yu Mincho", serif;
+            font-size: 3rem;
+            font-weight: 400;
+            line-height: 1;
+            margin: 0 0 24px;
+            text-align: left;
         }
         #greeting .description {
-            background-color: rgba(0, 0, 0, 0.4);
-            color: #ffffff;
-            padding: 12px;
+            color: #111111;
+            background: rgba(255, 255, 255, 0.88);
+            padding: 18px;
+            position: relative;
+            transform: rotate(0.35deg);
+        }
+        .rough-frame {
+            border: 0;
+            border-radius: 0;
+            box-shadow: none;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .rough-frame > *:not(.rough-frame-svg) {
+            position: relative;
+            z-index: 1;
         }
         .sns-list {
           display: flex;
           flex-direction: column;
           width: 100%;
           margin: 0 auto;
-          gap: 24px;
+          gap: 22px;
         }
 
         @media (min-width: 1076px) {
@@ -107,33 +130,37 @@ const image = "/images/chin.png";
             display: flex;
             max-width: 100%;
             min-height: 72px;
-            padding: 12px 16px;
+            padding: 14px 16px;
             text-decoration: none;
-            border-radius: 12px;
             align-items: center;
+            color: #111111;
+            background: rgba(255, 255, 255, 0.9);
+            transition: background-color 120ms ease, transform 120ms ease;
         }
-        .line-button {
-            background: linear-gradient(90deg, #10CAC3 0%, #07C662 100%);
-            color: #ffffff;
+        .sns-button:hover {
+            background: #ffffff;
         }
-        .x-button {
-            background: #000000;
-            color: #ffffff;
-            box-shadow: 0 0 8px 3px rgba(255, 255, 255, 0.12);
+        .sns-button:nth-child(4n + 1) {
+            transform: rotate(-0.35deg);
         }
-        .x-button img {
-          background-color: #ffffff;
+        .sns-button:nth-child(4n + 2) {
+            transform: rotate(0.28deg);
         }
-        .instagram-button {
-            color: #ffffff;
-            background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+        .sns-button:nth-child(4n + 3) {
+            transform: rotate(-0.14deg);
         }
-        .instagram-button img {
-          background-color: #000000;
+        .sns-button:nth-child(4n) {
+            transform: rotate(0.42deg);
         }
+        .sns-button:hover {
+            transform: translateY(-1px) rotate(0deg);
+        }
+        .line-button,
+        .x-button,
+        .instagram-button,
         .mixi2-button {
-          color: #ffffff;
-          background: linear-gradient(135deg, rgb(255, 121, 161), rgb(255, 154, 0))
+            color: #111111;
+            background: rgba(255, 255, 255, 0.9);
         }
         @media (min-width: 1076px) {
           .sns-button {
@@ -141,17 +168,29 @@ const image = "/images/chin.png";
           }
         }
         .sns-button img {
+          width: 48px;
+          height: 48px;
+          flex: 0 0 auto;
           margin-right: 12px;
-          border-radius: 50%;
+          filter: grayscale(1) contrast(1.35);
+          mix-blend-mode: multiply;
+          transform-origin: center center;
         }
         .sns-title {
-          font-weight: bold;
+          font-weight: 800;
         }
         .sns-content {
           height: 100%;
         }
         section h2 {
-            color: lime;
+            display: inline-block;
+            color: #111111;
+            font-size: 1.7rem;
+            font-weight: 900;
+            line-height: 1.2;
+            margin: 28px 0 18px;
+            position: relative;
+            transform: rotate(-0.6deg);
         }
         .events-section {
             padding: 4px;
@@ -174,13 +213,15 @@ const image = "/images/chin.png";
           }
         }
         @media (min-width: 720px) {
-           /* 720 = 696 + 12 * 2 */
           #greeting {
             width: 696px;
           }
+          #greeting h1 {
+            font-size: 5.4rem;
+          }
           .events-section {
             padding: 12px;
-            width: 696px; /* 696 = 340 * 2 + 16 */
+            width: 696px;
             margin: 0 auto;
           }
           section {
@@ -188,13 +229,15 @@ const image = "/images/chin.png";
           }
         }
         @media (min-width: 1076px) {
-           /* 1076 = 1052 + 12 * 2 */
           #greeting {
             width: 1052px;
           }
+          #greeting h1 {
+            font-size: 6.2rem;
+          }
           .events-section {
             padding: 12px;
-            width: 1052px; /* 1052 = 340 * 3 + 16 * 2 */
+            width: 1052px;
             margin: 0 auto;
           }
           section {
@@ -205,42 +248,56 @@ const image = "/images/chin.png";
             display: flex;
             flex-wrap: wrap;
             gap: 24px 16px;
+            align-items: flex-start;
+        }
+        .event-list :global(.plan:nth-child(5n + 1)) {
+            transform: rotate(-0.35deg);
+        }
+        .event-list :global(.plan:nth-child(5n + 2)) {
+            transform: rotate(0.28deg);
+        }
+        .event-list :global(.plan:nth-child(5n + 3)) {
+            transform: rotate(-0.18deg);
+        }
+        .event-list :global(.plan:nth-child(5n + 4)) {
+            transform: rotate(0.42deg);
         }
         .empty-events {
-            color: #ffffff;
+            color: #111111;
             font-size: 2rem;
         }
         footer {
             text-align: center;
-            color: #ffffff;
+            color: #111111;
             padding: 60px 0 48px 0;
         }
-@keyframes float {
-  0% {
-    background-position: center;
-  }
-  50% {
-    background-position: center -20px;
-  }
-  100% {
-    background-position: center;
-  }
-}
+        :global(.rough-frame-svg) {
+            overflow: visible;
+        }
     </style>
 </head>
 <body>
-    <div class="overlay"></div>
 <section id="greeting">
     <h1>珍スポ研究室</h1>
-    <div class="description">
+    <div class="description rough-frame" data-rough-bleed="8" data-rough-kind="intro">
        <p>珍スポ研究室とは、珍スポット（B級スポット）が好きな人たちが集まるコミュニティです。</p>
        <p>主にLINEオープンチャットで活動しています。</p>
     </div>
 </section>
+<section id="future-events" class="events-section">
+    <h2>これからのオフ会</h2>
+    <div class="event-list">
+      {
+			  futurePlans.map((plan) => (
+          <PlanCard plan={{ key: plan.slug, ...plan.data}} />
+        ))
+      }
+    </div>
+</section>
 <section id="sns" class="events-section">
-  <h2>SNS</h1>
+  <h2>SNS</h2>
   <div class="sns-list">
-    <a class="sns-button line-button" href="https://line.me/ti/g2/o6s0F62sSXO5k_dkl6xukS_pzeEnu6_5WAAJ2w" target="_blank">
+    <a class="sns-button line-button rough-frame" href="https://line.me/ti/g2/o6s0F62sSXO5k_dkl6xukS_pzeEnu6_5WAAJ2w" target="_blank">
       <img src="/images/chinspot-kenkyu.png" width="48" height="48" alt="LINE|珍スポ研究室" />
       <div class="sns-content">
         <div class="sns-title">珍スポ研究室</div>
@@ -248,7 +305,7 @@ const image = "/images/chin.png";
         <p>こちらがメインの活動場所になります。</p>
       </div>
     </a>
-    <a class="sns-button line-button" href="https://line.me/ti/g2/PZfs6bwr4EejequqSQYxW5Xc3zFotxYJqI3S0w" target="_blank">
+    <a class="sns-button line-button rough-frame" href="https://line.me/ti/g2/PZfs6bwr4EejequqSQYxW5Xc3zFotxYJqI3S0w" target="_blank">
       <img src="/images/chinspot-tanken_96x.webp" width="48" height="48" alt="LINE|珍スポ探検隊" />
       <div class="sns-content">
         <div class="sns-title">オフ会専用板(珍スポ探検隊)</div>
@@ -256,14 +313,14 @@ const image = "/images/chin.png";
         <p>オフ会参加希望の方はお入りください。</p>
       </div>
     </a>
-    <a class="sns-button mixi2-button" href="https://mixi.social/communities/b7036707-043d-4ea1-b440-aee13e275ec1?r=yyboedslphls" target="_blank">
+    <a class="sns-button mixi2-button rough-frame" href="https://mixi.social/communities/b7036707-043d-4ea1-b440-aee13e275ec1?r=yyboedslphls" target="_blank">
       <img src="/images/daibutsu_184x.jpg" width="48" height="48" alt="mixi2|珍スポ研究室" />
       <div class="sns-content">
         <div class="sns-title">珍スポ研究室</div>
         <p>珍スポの情報を共有するmixi2のグループです。</p>
       </div>
     </a>
-    <a class="sns-button x-button" href="https://x.com/chinspotcom" target="_blank">
+    <a class="sns-button x-button rough-frame" href="https://x.com/chinspotcom" target="_blank">
       <img src="/images/chin_x.png" width="48" height="48" alt="X|珍スポ研究室" />
       <div class="sns-content">
         <div class="sns-title">珍スポ研究室</div>
@@ -271,7 +328,7 @@ const image = "/images/chin.png";
         <p>公式Xです。</p>
       </div>
     </a>
-    <a class="sns-button instagram-button" href="https://www.instagram.com/chinspotcom" target="_blank">
+    <a class="sns-button instagram-button rough-frame" href="https://www.instagram.com/chinspotcom" target="_blank">
       <img src="/images/chin_x.png" width="48" height="48" alt="Instagram|珍スポ研究室" />
       <div class="sns-content">
         <div class="sns-title">珍スポ研究室</div>
@@ -281,18 +338,8 @@ const image = "/images/chin.png";
     </a>
   </div>
 </section>
-<section id="future-events" class="events-section">
-    <h2>これからのオフ会</h1>
-    <div class="event-list">
-      {
-			  futurePlans.map((plan) => (
-          <PlanCard plan={{ key: plan.slug, ...plan.data}} />
-        ))
-      }
-    </div>
-</section>
 <section id="passed-events" class="events-section">
-    <h2>過去のオフ会</h1>
+    <h2>過去のオフ会</h2>
     <div class="event-list">
       {
         pastPlans.map((plan) => (
@@ -309,24 +356,151 @@ const image = "/images/chin.png";
     <p>© 2024 珍スポ研究室</p>
 </footer>
 <script>
-  const body = document.body;
-  const image = new Image();
-  image.src = '/images/chinspot-back.webp';
-  const t1 = performance.now();
-  image.onload = function() {
-    if (performance.now() - t1 < 200) {
-      body.style.backgroundImage = `url('${image.src}')`;
+  import rough from 'roughjs';
+
+  const SVG_NS = 'http://www.w3.org/2000/svg';
+  const MAX_SEED = 2147483647;
+
+  const randomBetween = (min: number, max: number) => (
+    min + Math.random() * (max - min)
+  );
+
+  const randomSeed = () => Math.floor(randomBetween(1, MAX_SEED));
+
+  type RoughPoint = [number, number];
+
+  const getNumberData = (element: HTMLElement, key: string, fallback: number) => {
+    const value = element.dataset[key];
+    if (!value) {
+      return fallback;
+    }
+    const parsed = Number(value);
+    return Number.isFinite(parsed) ? parsed : fallback;
+  };
+
+  const createWobblyRectPoints = (
+    x: number,
+    y: number,
+    width: number,
+    height: number,
+    wobble: number
+  ) => {
+    const points: RoughPoint[] = [];
+    const right = x + width;
+    const bottom = y + height;
+    const horizontalSteps = Math.max(2, Math.ceil(width / 180));
+    const verticalSteps = Math.max(2, Math.ceil(height / 120));
+    const jitter = (value: number) => randomBetween(-value, value);
+
+    for (let i = 0; i <= horizontalSteps; i += 1) {
+      const progress = i / horizontalSteps;
+      points.push([x + width * progress, y + jitter(wobble)]);
+    }
+    for (let i = 1; i <= verticalSteps; i += 1) {
+      const progress = i / verticalSteps;
+      points.push([right + jitter(wobble), y + height * progress]);
+    }
+    for (let i = horizontalSteps - 1; i >= 0; i -= 1) {
+      const progress = i / horizontalSteps;
+      points.push([x + width * progress, bottom + jitter(wobble)]);
+    }
+    for (let i = verticalSteps - 1; i > 0; i -= 1) {
+      const progress = i / verticalSteps;
+      points.push([x + jitter(wobble), y + height * progress]);
+    }
+
+    return points;
+  };
+
+  const getRoughFrameOptions = (width: number) => {
+    const longEdgeScale = Math.min(1, Math.max(0.34, 680 / Math.max(width, 1)));
+
+    return {
+      bowing: randomBetween(0.35, 1.15) * longEdgeScale,
+      disableMultiStroke: true,
+      maxRandomnessOffset: randomBetween(0.45, 1.15),
+      preserveVertices: true,
+      roughness: randomBetween(0.75, 2.1),
+      seed: randomSeed(),
+      stroke: '#111111',
+      strokeWidth: randomBetween(1.15, 2),
+    };
+  };
+
+  const drawRoughFrame = (element: HTMLElement) => {
+    const previous = element.querySelector(':scope > .rough-frame-svg');
+    previous?.remove();
+
+    const width = element.offsetWidth;
+    const height = element.offsetHeight;
+    if (width <= 0 || height <= 0) {
       return;
     }
-    setTimeout(() => {
-      body.style.backgroundImage = `url('${image.src}')`;
-    }, 300);
-  }
+
+    const bleed = getNumberData(element, 'roughBleed', 7);
+    const svg = document.createElementNS(SVG_NS, 'svg');
+    const viewWidth = width + bleed * 2;
+    const viewHeight = height + bleed * 2;
+
+    svg.classList.add('rough-frame-svg');
+    svg.setAttribute('aria-hidden', 'true');
+    svg.setAttribute('focusable', 'false');
+    svg.setAttribute('viewBox', `0 0 ${viewWidth} ${viewHeight}`);
+    svg.style.position = 'absolute';
+    svg.style.inset = `${-bleed}px`;
+    svg.style.width = `calc(100% + ${bleed * 2}px)`;
+    svg.style.height = `calc(100% + ${bleed * 2}px)`;
+    svg.style.pointerEvents = 'none';
+    svg.style.zIndex = '0';
+
+    const roughSvg = rough.svg(svg);
+    const wobble = width > 900 ? 1.45 : 2.05;
+
+    const frame = roughSvg.polygon(
+      createWobblyRectPoints(bleed, bleed, width, height, wobble),
+      getRoughFrameOptions(width)
+    );
+    frame.querySelectorAll('path').forEach((path) => {
+      path.setAttribute('stroke-linecap', 'round');
+      path.setAttribute('stroke-linejoin', 'round');
+    });
+    svg.appendChild(frame);
+
+    element.prepend(svg);
+  };
+
+  const redrawRoughFrames = () => {
+    document.querySelectorAll<HTMLElement>('.rough-frame').forEach(drawRoughFrame);
+  };
+
+  let resizeFrame = 0;
+  const scheduleRedraw = () => {
+    if (resizeFrame) {
+      cancelAnimationFrame(resizeFrame);
+    }
+    resizeFrame = requestAnimationFrame(() => {
+      resizeFrame = 0;
+      redrawRoughFrames();
+    });
+  };
+
   const images = document.querySelectorAll('.event-list .plan img');
   images.forEach(img => {
     img.setAttribute('loading', 'lazy');
     img.setAttribute('decoding', 'async');
   });
+
+  const randomizeImageTilts = () => {
+    document.querySelectorAll<HTMLImageElement>('img').forEach((img) => {
+      const angle = randomBetween(-0.2, 0.2);
+      img.style.transform = `rotate(${angle}deg)`;
+    });
+  };
+
+  redrawRoughFrames();
+  randomizeImageTilts();
+  window.addEventListener('resize', scheduleRedraw);
+  window.addEventListener('load', scheduleRedraw, { once: true });
 </script>
 </body>
 </html>
