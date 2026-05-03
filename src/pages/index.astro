@@ -41,6 +41,12 @@ const image = "/images/chin.png";
       description={description}
       image={image}
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap"
+    />
     <style>
         html,
         body {
@@ -55,12 +61,12 @@ const image = "/images/chin.png";
         }
         body {
             color: #111111;
-            font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", "Helvetica Neue", Arial, sans-serif;
+            font-family: "Yuji Syuku", "Hiragino Mincho ProN", "Yu Mincho", serif;
             line-height: 1.7;
-            background:
+            /* background:
               radial-gradient(circle at 14px 18px, rgba(0, 0, 0, 0.055) 0 1px, transparent 1.5px) 0 0 / 42px 46px,
               linear-gradient(90deg, transparent 0 49%, rgba(0, 0, 0, 0.035) 50%, transparent 51%) 0 0 / 100% 22px,
-              #f6f6f2;
+              #f6f6f2; */
             overflow-x: hidden;
         }
         body::before {
@@ -69,11 +75,6 @@ const image = "/images/chin.png";
             inset: 0;
             z-index: -1;
             pointer-events: none;
-            background-image: url("/images/chinspot-back-small.webp");
-            background-position: center;
-            background-size: cover;
-            filter: grayscale(1) contrast(1.25);
-            opacity: 0.07;
         }
         section {
           padding: 12px;
@@ -86,12 +87,12 @@ const image = "/images/chin.png";
         #greeting h1 {
             display: inline-block;
             color: #111111;
+            font-family: "Yuji Syuku", "Hiragino Mincho ProN", "Yu Mincho", serif;
             font-size: 3rem;
-            font-weight: 900;
+            font-weight: 400;
             line-height: 1;
             margin: 0 0 24px;
             text-align: left;
-            transform: rotate(-1.3deg);
         }
         #greeting .description {
             color: #111111;
@@ -173,6 +174,7 @@ const image = "/images/chin.png";
           margin-right: 12px;
           filter: grayscale(1) contrast(1.35);
           mix-blend-mode: multiply;
+          transform-origin: center center;
         }
         .sns-title {
           font-weight: 800;
@@ -189,17 +191,6 @@ const image = "/images/chin.png";
             margin: 28px 0 18px;
             position: relative;
             transform: rotate(-0.6deg);
-        }
-        section h2::after {
-            content: "";
-            position: absolute;
-            left: -2px;
-            right: -8px;
-            bottom: -6px;
-            height: 4px;
-            background:
-              linear-gradient(90deg, #111111 0 24%, transparent 24% 29%, #111111 29% 62%, transparent 62% 68%, #111111 68% 100%);
-            transform: rotate(-0.8deg);
         }
         .events-section {
             padding: 4px;
@@ -499,7 +490,15 @@ const image = "/images/chin.png";
     img.setAttribute('decoding', 'async');
   });
 
+  const randomizeImageTilts = () => {
+    document.querySelectorAll<HTMLImageElement>('img').forEach((img) => {
+      const angle = randomBetween(-0.2, 0.2);
+      img.style.transform = `rotate(${angle}deg)`;
+    });
+  };
+
   redrawRoughFrames();
+  randomizeImageTilts();
   window.addEventListener('resize', scheduleRedraw);
   window.addEventListener('load', scheduleRedraw, { once: true });
 </script>
