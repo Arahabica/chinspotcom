@@ -41,12 +41,22 @@ const image = "/images/chin.png";
       description={description}
       image={image}
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="prefetch" href="/fonts/YujiSyuku-Regular.css" as="style" />
     <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap"
+      rel="prefetch"
+      href="/fonts/font-subsets/YujiSyuku-Regular-subset-dea5b5271574f50192b69bbe7093ac5f.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
     />
+    <link
+      rel="prefetch"
+      href="/fonts/font-subsets/YujiSyuku-Regular-subset-1dea4e1a5d3a82a6f26403892643f89b.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="/fonts/YujiSyuku-Regular.css" />
     <style>
         html,
         body {
@@ -61,7 +71,7 @@ const image = "/images/chin.png";
         }
         body {
             color: #111111;
-            font-family: "Yuji Syuku", "Hiragino Mincho ProN", "Yu Mincho", serif;
+            font-family: "YujiSyuku-Regular", "Hiragino Mincho ProN", "Yu Mincho", serif;
             line-height: 1.7;
             /* background:
               radial-gradient(circle at 14px 18px, rgba(0, 0, 0, 0.055) 0 1px, transparent 1.5px) 0 0 / 42px 46px,
