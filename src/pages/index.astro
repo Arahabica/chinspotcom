@@ -284,6 +284,16 @@ const image = "/images/chin.png";
        <p>主にLINEオープンチャットで活動しています。</p>
     </div>
 </section>
+<section id="future-events" class="events-section">
+    <h2>これからのオフ会</h2>
+    <div class="event-list">
+      {
+			  futurePlans.map((plan) => (
+          <PlanCard plan={{ key: plan.slug, ...plan.data}} />
+        ))
+      }
+    </div>
+</section>
 <section id="sns" class="events-section">
   <h2>SNS</h2>
   <div class="sns-list">
@@ -327,16 +337,6 @@ const image = "/images/chin.png";
       </div>
     </a>
   </div>
-</section>
-<section id="future-events" class="events-section">
-    <h2>これからのオフ会</h2>
-    <div class="event-list">
-      {
-			  futurePlans.map((plan) => (
-          <PlanCard plan={{ key: plan.slug, ...plan.data}} />
-        ))
-      }
-    </div>
 </section>
 <section id="passed-events" class="events-section">
     <h2>過去のオフ会</h2>
