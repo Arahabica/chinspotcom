@@ -70,7 +70,8 @@ const image = "/images/chin.png";
             padding: 0;
         }
         html {
-            background: #f6f6f2;
+            /* background: #f6f6f2; */
+            background: #f9f9f5;
         }
         p {
             margin: 0;
@@ -79,18 +80,21 @@ const image = "/images/chin.png";
             color: #111111;
             font-family: "YujiSyuku-Regular", "Hiragino Mincho ProN", "Yu Mincho", serif;
             line-height: 1.7;
-            /* background:
-              radial-gradient(circle at 14px 18px, rgba(0, 0, 0, 0.055) 0 1px, transparent 1.5px) 0 0 / 42px 46px,
-              linear-gradient(90deg, transparent 0 49%, rgba(0, 0, 0, 0.035) 50%, transparent 51%) 0 0 / 100% 22px,
-              #f6f6f2; */
+            position: relative;
+            background: #f9f9f5;
             overflow-x: hidden;
         }
-        body::before {
-            content: "";
-            position: fixed;
+        .paper-marks {
+            position: absolute;
             inset: 0;
-            z-index: -1;
+            width: 100%;
+            height: 100%;
             pointer-events: none;
+            z-index: 0;
+        }
+        body > :not(.paper-marks):not(script) {
+            position: relative;
+            z-index: 1;
         }
         section {
           padding: 12px;
@@ -290,6 +294,7 @@ const image = "/images/chin.png";
     </style>
 </head>
 <body>
+<canvas class="paper-marks" aria-hidden="true"></canvas>
 <section id="greeting">
     <h1>珍スポ研究室</h1>
     <div class="description" data-rough-bleed="8" data-rough-kind="intro">
@@ -370,6 +375,7 @@ const image = "/images/chin.png";
 </footer>
 <script>
   import rough from 'roughjs';
+  import { drawPaperMarks } from '../lib/PaperMarks';
 
   const SVG_NS = 'http://www.w3.org/2000/svg';
   const MAX_SEED = 2147483647;
@@ -493,6 +499,7 @@ const image = "/images/chin.png";
     }
     resizeFrame = requestAnimationFrame(() => {
       resizeFrame = 0;
+      drawPaperMarks();
       redrawRoughFrames();
     });
   };
@@ -510,6 +517,7 @@ const image = "/images/chin.png";
     });
   };
 
+  drawPaperMarks();
   redrawRoughFrames();
   randomizeImageTilts();
   window.addEventListener('resize', scheduleRedraw);
