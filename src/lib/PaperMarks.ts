@@ -8,8 +8,8 @@ const MARK_DENSITY = {
     heightInterval: 520,
   },
   triangleNoise: {
-    min: 5,
-    heightInterval: 360,
+    min: 24,
+    heightInterval: 120,
   },
 };
 
@@ -84,8 +84,8 @@ const drawInkTriangleNoise = (
 ) => {
   const x = randomBetween(18, width - 18);
   const y = randomBetween(18, height - 18);
-  const length = randomBetween(5, 16);
-  const thickness = randomBetween(0.8, 2.6);
+  const length = randomBetween(4, 12);
+  const thickness = randomBetween(0.6, 2.0);
 
   context.save();
   context.translate(x, y);
@@ -102,9 +102,9 @@ const drawInkTriangleNoise = (
     length * 0.6,
     thickness * 1.4
   );
-  gradient.addColorStop(0, createInkColor(randomBetween(0.9, 1)));
-  gradient.addColorStop(0.45, createInkColor(randomBetween(0.55, 0.85)));
-  gradient.addColorStop(1, createInkColor(randomBetween(0.12, 0.35)));
+  gradient.addColorStop(0, createInkColor(randomBetween(0.3, 0.8)));
+  gradient.addColorStop(0.45, createInkColor(randomBetween(0.18, 0.34)));
+  gradient.addColorStop(1, createInkColor(randomBetween(0.04, 0.12)));
 
   context.fillStyle = gradient;
   context.fill();
