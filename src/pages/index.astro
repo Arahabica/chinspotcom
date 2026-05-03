@@ -41,13 +41,29 @@ const image = "/images/chin.png";
       description={description}
       image={image}
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="prefetch" href="/fonts/YujiSyuku-Regular.css" as="style" />
     <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap"
+      rel="preload"
+      href="/fonts/font-subsets/YujiSyuku-Regular-subset-dea5b5271574f50192b69bbe7093ac5f.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
     />
+    <link
+      rel="prefetch"
+      href="/fonts/font-subsets/YujiSyuku-Regular-subset-1dea4e1a5d3a82a6f26403892643f89b.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="/fonts/YujiSyuku-Regular.css" />
     <style>
+        @font-face {
+            font-family: "YujiSyukuTitle";
+            src: url("/fonts/font-subsets/YujiSyuku-Regular-subset-dea5b5271574f50192b69bbe7093ac5f.woff2") format("woff2");
+            font-display: block;
+            unicode-range: U+30b9, U+30dd, U+5ba4, U+73cd, U+7814, U+7a76;
+        }
         html,
         body {
             margin: 0;
@@ -61,7 +77,7 @@ const image = "/images/chin.png";
         }
         body {
             color: #111111;
-            font-family: "Yuji Syuku", "Hiragino Mincho ProN", "Yu Mincho", serif;
+            font-family: "YujiSyuku-Regular", "Hiragino Mincho ProN", "Yu Mincho", serif;
             line-height: 1.7;
             /* background:
               radial-gradient(circle at 14px 18px, rgba(0, 0, 0, 0.055) 0 1px, transparent 1.5px) 0 0 / 42px 46px,
@@ -81,13 +97,13 @@ const image = "/images/chin.png";
           margin: 0 auto;
         }
         #greeting {
-            padding: 28px 12px 12px;
+            /* padding: 28px 12px 12px; */
             margin: 0 auto;
         }
         #greeting h1 {
             display: inline-block;
             color: #111111;
-            font-family: "Yuji Syuku", "Hiragino Mincho ProN", "Yu Mincho", serif;
+            font-family: "YujiSyukuTitle", "YujiSyuku-Regular", "Hiragino Mincho ProN", "Yu Mincho", serif;
             font-size: 3rem;
             font-weight: 400;
             line-height: 1;
@@ -96,10 +112,9 @@ const image = "/images/chin.png";
         }
         #greeting .description {
             color: #111111;
-            background: rgba(255, 255, 255, 0.88);
-            padding: 18px;
             position: relative;
             transform: rotate(0.35deg);
+            margin: 36px 0 12px 0;
         }
         .rough-frame {
             border: 0;
@@ -172,8 +187,6 @@ const image = "/images/chin.png";
           height: 48px;
           flex: 0 0 auto;
           margin-right: 12px;
-          filter: grayscale(1) contrast(1.35);
-          mix-blend-mode: multiply;
           transform-origin: center center;
         }
         .sns-title {
@@ -279,7 +292,7 @@ const image = "/images/chin.png";
 <body>
 <section id="greeting">
     <h1>珍スポ研究室</h1>
-    <div class="description rough-frame" data-rough-bleed="8" data-rough-kind="intro">
+    <div class="description" data-rough-bleed="8" data-rough-kind="intro">
        <p>珍スポ研究室とは、珍スポット（B級スポット）が好きな人たちが集まるコミュニティです。</p>
        <p>主にLINEオープンチャットで活動しています。</p>
     </div>
@@ -422,8 +435,8 @@ const image = "/images/chin.png";
       preserveVertices: true,
       roughness: randomBetween(0.75, 2.1),
       seed: randomSeed(),
-      stroke: '#111111',
-      strokeWidth: randomBetween(1.15, 2),
+      stroke: '#666666',
+      strokeWidth: randomBetween(0.7, 1.1),
     };
   };
 
@@ -451,10 +464,10 @@ const image = "/images/chin.png";
     svg.style.width = `calc(100% + ${bleed * 2}px)`;
     svg.style.height = `calc(100% + ${bleed * 2}px)`;
     svg.style.pointerEvents = 'none';
-    svg.style.zIndex = '0';
+    svg.style.zIndex = '3';
 
     const roughSvg = rough.svg(svg);
-    const wobble = width > 900 ? 1.45 : 2.05;
+    const wobble = 0.3;
 
     const frame = roughSvg.polygon(
       createWobblyRectPoints(bleed, bleed, width, height, wobble),
@@ -492,7 +505,7 @@ const image = "/images/chin.png";
 
   const randomizeImageTilts = () => {
     document.querySelectorAll<HTMLImageElement>('img').forEach((img) => {
-      const angle = randomBetween(-0.2, 0.2);
+      const angle = randomBetween(-0.25, 0.25);
       img.style.transform = `rotate(${angle}deg)`;
     });
   };
