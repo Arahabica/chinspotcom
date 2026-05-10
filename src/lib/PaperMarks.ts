@@ -3,79 +3,17 @@ const randomBetween = (min: number, max: number) => (
 );
 
 const MARK_DENSITY = {
-  stains: {
-    min: 8,
-    heightInterval: 520,
-  },
   triangleNoise: {
     min: 24,
     heightInterval: 120,
   },
 };
 
-const createStainColor = (alpha: number) => `rgba(116, 83, 42, ${alpha})`;
 const createInkColor = (alpha: number) => `rgba(16, 14, 12, ${alpha})`;
 
 const getMarkCount = (height: number, density: { min: number; heightInterval: number }) => (
   Math.max(density.min, Math.floor(height / density.heightInterval))
 );
-
-const drawUnevenStain = (
-  context: CanvasRenderingContext2D,
-  x: number,
-  y: number,
-  radius: number
-) => {
-  const lobes = Math.floor(randomBetween(5, 10));
-
-  for (let i = 0; i < lobes; i += 1) {
-    const offsetX = randomBetween(-radius * 0.38, radius * 0.38);
-    const offsetY = randomBetween(-radius * 0.28, radius * 0.28);
-    const lobeRadius = radius * randomBetween(0.42, 0.92);
-
-    context.save();
-    context.translate(x + offsetX, y + offsetY);
-    context.rotate(randomBetween(-0.8, 0.8));
-    context.scale(randomBetween(0.68, 1.8), randomBetween(0.42, 1.15));
-
-    const gradient = context.createRadialGradient(
-      0,
-      0,
-      lobeRadius * 0.08,
-      0,
-      0,
-      lobeRadius
-    );
-
-    gradient.addColorStop(0, createStainColor(randomBetween(0.008, 0.018)));
-    gradient.addColorStop(0.54, createStainColor(randomBetween(0.004, 0.01)));
-    gradient.addColorStop(1, createStainColor(0));
-
-    context.beginPath();
-    context.arc(0, 0, lobeRadius, 0, Math.PI * 2);
-    context.fillStyle = gradient;
-    context.fill();
-    context.restore();
-  }
-
-  const specks = Math.floor(randomBetween(3, 9));
-  for (let i = 0; i < specks; i += 1) {
-    const angle = randomBetween(0, Math.PI * 2);
-    const distance = randomBetween(radius * 0.15, radius * 1.25);
-    const speckRadius = randomBetween(0.6, 2.4);
-
-    context.beginPath();
-    context.arc(
-      x + Math.cos(angle) * distance,
-      y + Math.sin(angle) * distance,
-      speckRadius,
-      0,
-      Math.PI * 2
-    );
-    context.fillStyle = createStainColor(randomBetween(0.005, 0.018));
-    context.fill();
-  }
-};
 
 const drawInkTriangleNoise = (
   context: CanvasRenderingContext2D,
@@ -129,16 +67,6 @@ export const drawPaperMarks = () => {
 
   context.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
   context.clearRect(0, 0, width, height);
-
-  const stainCount = getMarkCount(height, MARK_DENSITY.stains);
-  for (let i = 0; i < stainCount; i += 1) {
-    drawUnevenStain(
-      context,
-      randomBetween(-40, width + 40),
-      randomBetween(-30, height + 30),
-      randomBetween(28, 96)
-    );
-  }
 
   const triangleNoiseCount = getMarkCount(height, MARK_DENSITY.triangleNoise);
   for (let i = 0; i < triangleNoiseCount; i += 1) {
