@@ -3,8 +3,8 @@ title: '鴨江ヴンダーカンマーに行く会 〜 遠州旅 Day1 〜'
 description: '鴨江ヴンダーカンマーに行く会 ー 遠州旅 Day1'
 date: '2026/07/13'
 heroImage: '/images/enshu01/gallerysecimg_q_480x296.webp'
-heroImageFromUrl: ''
-heroImageFromName: ''
+heroImageFromUrl: 'https://wunderkammer.jp/wunderkammer/'
+heroImageFromName: '鴨江ヴンダーカンマー | 鴨江ヴンダーカンマー（Wunderkammer）│浜松市の怪奇骨董秘宝館'
 startTime: '10:40'
 place: 'JR掛川駅南口改札'
 capacity: '1 / 8人'
@@ -120,9 +120,11 @@ dateTbd: true
 ### 掛川駅までの移動
 
 東京駅からの場合、8:57発の東海道新幹線こだまで10:34に掛川駅に到着します。
+新大阪駅からの場合、8:48発の東海道新幹線で10:37に掛川駅に到着します。
 
 ### 2日目について
 
+翌日は[鴨江ヴンダーカンマーに行く会 〜 遠州旅 Day2 〜](/events/enshu02/)
 
 
 ## 参加方法
