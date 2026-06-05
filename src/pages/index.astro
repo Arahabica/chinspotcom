@@ -303,7 +303,7 @@ const image = "/images/chin.png";
     <div class="event-list">
       {
 			  futurePlans.map((plan) => (
-          <PlanCard plan={{ key: plan.slug, ...plan.data}} />
+          <PlanCard plan={{ key: plan.id, ...plan.data}} />
         ))
       }
     </div>
@@ -357,7 +357,7 @@ const image = "/images/chin.png";
     <div class="event-list">
       {
         pastPlans.map((plan) => (
-          <PlanCard plan={{ key: plan.slug, ...plan.data}} />
+          <PlanCard plan={{ key: plan.id, ...plan.data}} />
         ))
       }
     </div>
