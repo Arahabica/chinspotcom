@@ -3,7 +3,8 @@ const HANDWRITTEN_OPTS = {
   translateX: [-0.2, 0.2],
   translateY: [-0.4, 0.4],
   rotate: [-1.8, 1.8],
-  scaleX: [0.96, 1.06],
+  scaleX: [0.96, 1.04],
+  scaleY: [0.98, 1.02],
   edgeBias: 2, // ランダムが端によりやすいように設定。1の場合均等。
 };
 
@@ -75,11 +76,15 @@ const createHandwrittenSpan = (text) => {
   const translateY = randomBetween(...HANDWRITTEN_OPTS.translateY);
   const rotation = randomBetween(...HANDWRITTEN_OPTS.rotate);
   const scaleX = randomBetween(...HANDWRITTEN_OPTS.scaleX);
+  const scaleY = randomBetween(...HANDWRITTEN_OPTS.scaleY);
 
   span.className = HANDWRITTEN_TEXT_CLASS;
   span.textContent = text;
   span.style.display = 'inline-block';
-  span.style.transform = `translate(${translateX.toFixed(2)}px, ${translateY.toFixed(2)}px) rotate(${rotation.toFixed(2)}deg) scaleX(${scaleX.toFixed(3)})`;
+  span.style.transform = 
+    `translate(${translateX.toFixed(2)}px, ${translateY.toFixed(2)}px) ` +
+    `rotate(${rotation.toFixed(2)}deg) ` +
+    `scale(${scaleX.toFixed(3)}, ${scaleY.toFixed(3)}) `;
   span.style.transformOrigin = 'center center';
   span.style.verticalAlign = 'baseline';
 
