@@ -371,6 +371,7 @@ const image = "/images/chin.png";
 </footer>
 <script>
   import rough from 'roughjs';
+  import { applyHandwrittenText } from '../lib/HandwrittenText.js';
   import { drawPaperMarks } from '../lib/PaperMarks';
 
   const SVG_NS = 'http://www.w3.org/2000/svg';
@@ -512,6 +513,7 @@ const image = "/images/chin.png";
     });
   };
 
+  applyHandwrittenText();
   drawPaperMarks();
   redrawRoughFrames();
   randomizeImageTilts();
