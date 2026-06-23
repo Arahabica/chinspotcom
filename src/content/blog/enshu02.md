@@ -1,15 +1,14 @@
 ---
 title: '北大路コレクション跡に行く会 〜 遠州旅 Day2 〜'
 description: '北大路コレクション跡に行く会 ー 遠州旅 Day2'
-date: '2026/07/14'
+date: '2026/08/09'
 heroImage: '/images/enshu02/kitaoji_800x600.webp'
 heroImageFromUrl: 'https://ukiyokurashi.com/kitaoji-collection/'
 heroImageFromName: '【静岡県浜松市】北大路コレクション-登山道に残る巨大マンモスと大量の石像！ | Explore Romance'
 startTime: '09:30'
 place: 'JR浜松駅新幹線改札口'
-capacity: '6 / 8人'
-label: '企画中'
-dateTbd: true
+capacity: '8 / 8人'
+label: '満員御礼'
 ---
 
 ## 訪問スポット

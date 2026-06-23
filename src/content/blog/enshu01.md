@@ -1,15 +1,14 @@
 ---
 title: '鴨江ヴンダーカンマーに行く会 〜 遠州旅 Day1 〜'
 description: '鴨江ヴンダーカンマーに行く会 ー 遠州旅 Day1'
-date: '2026/07/13'
+date: '2026/08/08'
 heroImage: '/images/enshu01/gallerysecimg_q_480x296.webp'
 heroImageFromUrl: 'https://wunderkammer.jp/wunderkammer/'
 heroImageFromName: '鴨江ヴンダーカンマー | 鴨江ヴンダーカンマー（Wunderkammer）│浜松市の怪奇骨董秘宝館'
 startTime: '10:40'
 place: 'JR掛川駅南口改札'
-capacity: '6 / 8人'
-label: '企画中'
-dateTbd: true
+capacity: '8 / 8人'
+label: '満員御礼'
 ---
 
 ## 訪問スポット
