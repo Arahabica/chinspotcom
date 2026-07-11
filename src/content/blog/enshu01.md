@@ -7,8 +7,8 @@ heroImageFromUrl: 'https://wunderkammer.jp/wunderkammer/'
 heroImageFromName: '鴨江ヴンダーカンマー | 鴨江ヴンダーカンマー（Wunderkammer）│浜松市の怪奇骨董秘宝館'
 startTime: '10:40'
 place: 'JR掛川駅南口改札'
-capacity: '11 / 12人'
-label: '募集中'
+capacity: '11 / 11人'
+label: '満員御礼'
 ---
 
 ## 訪問スポット
