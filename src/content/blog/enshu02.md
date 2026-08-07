@@ -8,7 +8,7 @@ heroImageFromName: '【静岡県浜松市】北大路コレクション-登山�
 startTime: '09:30'
 place: 'JR浜松駅新幹線改札口'
 capacity: '9 / 11人'
-label: '募集中'
+label: ''
 ---
 
 ## 訪問スポット

@@ -7,8 +7,8 @@ heroImageFromUrl: 'https://wunderkammer.jp/wunderkammer/'
 heroImageFromName: '鴨江ヴンダーカンマー | 鴨江ヴンダーカンマー（Wunderkammer）│浜松市の怪奇骨董秘宝館'
 startTime: '10:40'
 place: 'JR掛川駅南口改札'
-capacity: '11 / 11人'
-label: '満員御礼'
+capacity: '10 / 11人'
+label: ''
 ---
 
 ## 訪問スポット
@@ -92,7 +92,7 @@ label: '満員御礼'
 ## 催行条件
 
 最小催行人数: 4人  
-最大催行人数: 8人
+最大催行人数: 11人
 
 ※ 運転者がもう一人見つかれば、最大催行人数が増えるかもしれません。
 
