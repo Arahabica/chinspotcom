@@ -1,13 +1,11 @@
 ---
-title: '北大路コレクション跡に行く会 〜 遠州旅 Day2 〜'
-description: '北大路コレクション跡に行く会 ー 遠州旅 Day2'
+title: 'ぬくもりの旅 〜 遠州旅 Day2 〜'
+description: 'ぬくもりの旅 ー 遠州旅 Day2'
 date: '2026/08/09'
-heroImage: '/images/enshu02/kitaoji_800x600.webp'
-heroImageFromUrl: 'https://ukiyokurashi.com/kitaoji-collection/'
-heroImageFromName: '【静岡県浜松市】北大路コレクション-登山道に残る巨大マンモスと大量の石像！ | Explore Romance'
+heroImage: '/images/enshu02/samantha_800x600.webp'
 startTime: '09:30'
 place: 'JR浜松駅新幹線改札口'
-capacity: '10 / 11人'
+capacity: '9 / 11人'
 label: ''
 ---
 
@@ -31,7 +29,7 @@ label: ''
 
 ### サマンサ・マーサ
 
-![サマンサ・マーサ](/images/enshu02/samantha_640x480.webp)
+![サマンサ・マーサ](/images/enshu02/samantha_800x600.webp)
 
 > [【静岡】　ここだけ次元がゆがんでる！　サマンサ・マーサ : ＢＱ ～B-spot Explorer～ Powered by ライブドアブログ](https://papicocafe.blog.jp/8802689.html)　より引用
 
