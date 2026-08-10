@@ -7,7 +7,7 @@ heroImageFromUrl: 'https://ukiyokurashi.com/kitaoji-collection/'
 heroImageFromName: '【静岡県浜松市】北大路コレクション-登山道に残る巨大マンモスと大量の石像！ | Explore Romance'
 startTime: '09:30'
 place: 'JR浜松駅新幹線改札口'
-capacity: '9 / 11人'
+capacity: '10 / 11人'
 label: ''
 ---
 
@@ -26,9 +26,7 @@ label: ''
 
 なによりも迫力があるのが3体の**巨大なマンモス像**。こんな山奥の奥底にこんなものがあるとは...
 
-廃墟で情報も少ないので、当日どれくらい見れるかは未知数ですが、行ってみたいと思います。
-
-（空振りだったらすみません）
+道路沿いから覗ければ良いのですが。
 
 
 ### サマンサ・マーサ
